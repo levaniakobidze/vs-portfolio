@@ -1,0 +1,80 @@
+import React from "react";
+import Container from "../../components/Container/Container";
+import classes from "./Hello.module.css";
+import code from "../../assets/code_snippet.svg";
+import green_light from "../../assets/green_light.svg";
+import blue_light from "../../assets/blue_light.svg";
+
+function Hello() {
+  return (
+    <section className={classes.hello}>
+      <Container className={classes.hello_container}>
+        <div className={classes.left}>
+          <div className={classes.personal_info}>
+            <p className={classes.greetings}>Hi all. I am</p>
+            <h1 className={classes.name}>Levan Iakobidze</h1>
+            <p className={classes.profession}>{">"} Front-end developer</p>
+          </div>
+          <div className={classes.below_text}>
+            <p className={classes.comment}>
+              {" "}
+              // you can see all my projects on my Github page
+            </p>
+            <p className={classes.comment}>
+              {" "}
+              // you can see all my projects on my Github page
+            </p>
+            <span className={classes.github_link_cont}>
+              <span className={classes.const}>const </span>
+              <span className={classes.variable}>githubLink</span>
+              <span className={classes.equal}> = </span>
+              <a
+                className={classes.value}
+                href='https://github.com/levaniakobidze'>
+                {" "}
+                "https://github.com/levaniakobidze"
+              </a>
+            </span>
+          </div>
+        </div>
+        <div className={classes.right}>
+          <img
+            data-aos='fade-up'
+            data-aos-duration='500'
+            className={classes.blur}
+            src={code}
+            alt='code'
+          />
+          <img
+            data-aos='fade-up'
+            data-aos-duration='800'
+            className={classes.middle}
+            src={code}
+            alt='code'
+          />
+          <img
+            data-aos='fade-up'
+            data-aos-duration='1000'
+            className={classes.blur}
+            src={code}
+            alt='code'
+          />
+          <img
+            data-aos='fade-up'
+            className={classes.green_light}
+            src={green_light}
+            alt='light'
+          />
+          <img
+            data-aos='fade-up'
+            className={classes.blue_light}
+            src={blue_light}
+            alt='light'
+          />
+        </div>
+      </Container>
+    </section>
+  );
+}
+
+export default Hello;

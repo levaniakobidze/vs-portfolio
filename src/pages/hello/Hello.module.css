@@ -1,0 +1,108 @@
+.hello {
+  width: 100%;
+  min-height: 110vh;
+  background-color: #011627;
+}
+
+.hello_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.left {
+  width: 581px;
+  height: 300px;
+}
+.right {
+  width: 581px;
+  position: relative;
+  /* overflow-x: hidden; */
+  /* overflow-y: hidden; */
+}
+.personal_info {
+  width: 100%;
+}
+.greetings {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 450;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height */
+  color: #e5e9f0;
+}
+.name {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 62px;
+  line-height: 81px;
+  color: #e5e9f0;
+}
+.profession {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 450;
+  font-size: 32px;
+  line-height: 42px;
+  /* identical to box height */
+  color: #4d5bce;
+}
+
+.below_text {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.comment {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 450;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+  color: #607b96;
+  margin-bottom: 10px;
+}
+
+.github_link_cont {
+  margin-top: 30px;
+}
+.const {
+  color: #4d5bce;
+}
+.variable {
+  color: #43d9ad;
+}
+.equal {
+  color: #fff;
+}
+.value {
+  text-decoration: none;
+  color: #e99287;
+}
+.middle {
+  position: relative;
+  z-index: 1;
+}
+
+.blur {
+  opacity: 0.3 !important;
+  position: relative;
+  z-index: 1;
+}
+
+.green_light {
+  position: absolute;
+  left: -30%;
+  top: 0%;
+  width: 100%;
+}
+.blue_light {
+  position: absolute;
+  left: 20%;
+  bottom: -10%;
+  width: 90%;
+}

@@ -1,0 +1,74 @@
+.navbar {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #011627;
+}
+.navbar_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #1e2d3d;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 450;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+  color: #607b96;
+  border-right: 1px solid #1e2d3d;
+  padding: 20px 0;
+  cursor: pointer;
+  width: 250px;
+}
+
+.navbar_menu {
+  display: flex;
+  justify-content: center;
+}
+.navbar_menu li {
+  list-style: none;
+  display: flex;
+}
+.navbar_menu li a {
+  text-decoration: none;
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 450;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+  color: #607b96;
+  border-right: 1px solid #1e2d3d;
+  padding: 20px 30px;
+
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.active_link {
+  border-bottom: 4px solid #fea55f !important;
+}
+
+.contact_btn {
+  text-decoration: none;
+  padding: 20px 30px;
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 450;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+  border-left: 1px solid #1e2d3d;
+  text-align: right;
+  color: #607b96;
+}
