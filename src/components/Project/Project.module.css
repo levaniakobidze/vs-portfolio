@@ -1,0 +1,96 @@
+.project {
+  width: 320.35px;
+  display: flex;
+  flex-direction: column;
+}
+.num_and_title {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 10px;
+}
+.project_num {
+  color: #5565e8;
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+}
+.project_title {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #607b96;
+  margin-left: 10px;
+}
+
+.image_and_description {
+  width: 100%;
+  height: 280px;
+  border: 1px solid #1e2d3d;
+  border-radius: 15px;
+  background: #011221;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.project_image_cont {
+  width: 100%;
+  height: 140px;
+}
+.project_image_cont img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  filter: blur(1px);
+  transition: all 0.3s;
+}
+.image_and_description:hover > .project_image_cont img {
+  filter: blur(0px);
+}
+.project_description {
+  width: 100%;
+  padding: 20px 10px;
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 450;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+  color: #607b96;
+  text-align: center;
+}
+.view_project_btn_cont {
+  width: 100%;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.view_project_btn_cont a {
+  text-decoration: none;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 129px;
+  height: 38px;
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 450;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #9e9e9e;
+  background: #111c28;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

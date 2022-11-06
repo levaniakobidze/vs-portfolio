@@ -1,0 +1,44 @@
+.projects {
+  width: 100%;
+  min-height: 110vh;
+  background-color: #011627;
+}
+.projects_container {
+  display: flex;
+}
+.right {
+  width: 100%;
+}
+
+.top_bar {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #1e2d3d;
+}
+.top_bar_contact {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+  color: #607b96;
+  width: 200px;
+  border-right: 1px solid #1e2d3d;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 10px;
+  justify-content: space-between;
+}
+.top_bar_contact img {
+  cursor: pointer;
+}
+.projects_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 20px;
+  padding-bottom: 100px;
+}

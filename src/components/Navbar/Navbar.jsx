@@ -10,14 +10,14 @@ function Navbar() {
         <div className={classes.left}>
           <div className={classes.logo}> Levan - Iakobidze</div>
           <ul className={classes.navbar_menu}>
-            <li>
+            <li data-aos='fade-left' data-aos-duration='700'>
               {" "}
               <Link to={"/"}>_hello</Link>
             </li>
-            <li>
+            <li data-aos='fade-left' data-aos-duration='900'>
               <Link to={"/_about"}>_about-me</Link>{" "}
             </li>
-            <li>
+            <li data-aos='fade-left' data-aos-duration='1200'>
               <Link to={"/_projects"}>_projects</Link>
             </li>
           </ul>

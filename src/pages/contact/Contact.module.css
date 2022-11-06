@@ -9,10 +9,10 @@
   display: flex;
 }
 
-.left {
+/* .left {
   width: 250px;
   border-right: 1px solid #1e2d3d;
-}
+} */
 
 .right {
   display: flex;
@@ -46,6 +46,7 @@
 .contact_cont {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .form {

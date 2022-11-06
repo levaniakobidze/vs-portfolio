@@ -1,0 +1,5 @@
+.container {
+  width: 250px;
+  border-right: 1px solid #1e2d3d;
+  min-height: 100%;
+}

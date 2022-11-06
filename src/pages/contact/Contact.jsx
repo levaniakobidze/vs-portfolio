@@ -3,17 +3,21 @@ import Container from "../../components/Container/Container";
 import classes from "./Contact.module.css";
 import x from "../../assets/x.svg";
 import { useState } from "react";
+import LeftSideBarCont from "../../components/LeftSideBarCont/LeftSideBarCont";
 
 function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+
+  /// GET CURRENT DATE
   const date = new Date();
   let day = date.getDate();
   let month = date.getMonth() + 1;
   let year = date.getFullYear();
   let currentDate = `${day}-${month}-${year}`;
 
+  /// INPUT HANDLERS
   const nameChangeHandler = (e) => {
     setName(e.target.value);
   };
@@ -27,11 +31,16 @@ function Contact() {
   return (
     <section className={classes.contact}>
       <Container className={classes.contact_container}>
-        <div className={classes.left}></div>
+        <div className={classes.left}>
+          <LeftSideBarCont />
+        </div>
         <div className={classes.right}>
           <div className={classes.top_bar}>
             {" "}
-            <p className={classes.top_bar_contact}>
+            <p
+              className={classes.top_bar_contact}
+              data-aos='fade-left'
+              data-aos-duration='2000'>
               contacts <img src={x} alt='x' />
             </p>
           </div>
