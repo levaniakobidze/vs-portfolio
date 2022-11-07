@@ -9,11 +9,6 @@
   display: flex;
 }
 
-/* .left {
-  width: 250px;
-  border-right: 1px solid #1e2d3d;
-} */
-
 .right {
   display: flex;
   flex-direction: column;

@@ -25,7 +25,7 @@ function Projects() {
           </div>
           <div className={classes.projects_list}>
             {data.map((project, index) => {
-              return <Project indx={index} {...project} />;
+              return <Project key={project.id} indx={index} {...project} />;
             })}
           </div>
         </div>

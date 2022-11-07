@@ -24,11 +24,11 @@ function Projects({ img, indx, title, host, github }) {
       </div>
       <div
         className={classes.image_and_description}
-        style={{
-          boxShadow: `0 0px 7px 0.01px ${
-            isHover ? `#${randomColor}` : "transparent"
-          } `,
-        }}
+        // style={{
+        //   boxShadow: `0 0px 7px 0.01px ${
+        //     isHover ? `#${randomColor}` : "transparent"
+        //   } `,
+        // }}
         onMouseOver={onProjectMouseOver}
         onMouseLeave={onProjectMouseLeave}>
         <div className={classes.project_image_cont}>

@@ -1,13 +1,14 @@
 .project {
-  width: 320.35px;
+  width: 270.35px;
   display: flex;
   flex-direction: column;
 }
+
 .num_and_title {
   display: flex;
   justify-content: left;
   align-items: center;
-  padding-left: 10px;
+  padding-left: 7px;
 }
 .project_num {
   color: #5565e8;
@@ -33,11 +34,14 @@
   border: 1px solid #1e2d3d;
   border-radius: 15px;
   background: #011221;
-  margin-top: 10px;
+  margin-top: 15px;
   display: flex;
   flex-direction: column;
   cursor: pointer;
   transition: all 0.5s;
+}
+.image_and_description:hover {
+  box-shadow: 0 0 10px 3px rgb(0, 0, 0) !important;
 }
 .project_image_cont {
   width: 100%;
@@ -48,12 +52,9 @@
   height: 100%;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  filter: blur(1px);
   transition: all 0.3s;
 }
-.image_and_description:hover > .project_image_cont img {
-  filter: blur(0px);
-}
+
 .project_description {
   width: 100%;
   padding: 20px 10px;
@@ -78,7 +79,7 @@
   border: 0;
   padding: 0;
   box-sizing: border-box;
-  width: 129px;
+  width: 90px;
   height: 38px;
   font-family: "Fira Code";
   font-style: normal;
@@ -93,4 +94,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s;
+}
+.view_project_btn_cont a:hover {
+  background-color: #c07a45;
+  color: #fff;
 }

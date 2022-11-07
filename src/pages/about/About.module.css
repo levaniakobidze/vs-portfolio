@@ -1,0 +1,9 @@
+.about {
+  width: 100%;
+  min-height: 110vh;
+  background-color: #011627;
+}
+.about_container {
+  min-height: 100vh;
+  display: flex;
+}
