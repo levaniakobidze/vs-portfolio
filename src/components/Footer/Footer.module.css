@@ -1,0 +1,49 @@
+.footer {
+  width: 100%;
+  background-color: #011627;
+}
+
+.footer_container {
+  height: 49.74px;
+  border: 1px solid #1e2d3d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact_left {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.contact_title {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 450;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+  color: #607b96;
+  padding: 0 10px;
+}
+.social_icon_cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50px;
+  border-right: 1px solid #1e2d3d;
+  border-left: 1px solid #1e2d3d;
+}
+
+.contact_right {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.icon {
+  width: 20.38px !important;
+  font-size: 25px !important;
+  color: #607b96 !important;
+}
