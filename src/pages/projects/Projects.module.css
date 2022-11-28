@@ -8,6 +8,7 @@
 }
 .right {
   width: 100%;
+  overflow: hidden;
 }
 
 .top_bar {
@@ -39,6 +40,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 30px;
-  padding: 100px 100px;
-  padding-bottom: 100px;
+  /*padding: 100px 100px;*/
+  /*padding-bottom: 100px;*/
+  width: 100%;
 }

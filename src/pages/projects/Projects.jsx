@@ -3,8 +3,7 @@ import Container from "../../components/Container/Container";
 import LeftSideBarCont from "../../components/LeftSideBarCont/LeftSideBarCont";
 import classes from "./Projects.module.css";
 import x from "../../assets/x.svg";
-import Project from "../../components/Project/Project";
-import { data } from "../../components/Project/ProjectsData";
+import ProjectSlider from "../../components/ProjectSlider/ProjectSlider";
 
 function Projects() {
   return (
@@ -24,9 +23,7 @@ function Projects() {
             </p>
           </div>
           <div className={classes.projects_list}>
-            {data.map((project, index) => {
-              return <Project key={project.id} indx={index} {...project} />;
-            })}
+          <ProjectSlider />
           </div>
         </div>
       </Container>

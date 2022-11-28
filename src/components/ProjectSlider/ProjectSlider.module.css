@@ -1,0 +1,18 @@
+
+splide__arrows{
+    width: 100%;
+    background: green;
+    position: absolute;
+}
+.your-class-prev{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: green;
+}
+.your-class-next{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: green;
+}

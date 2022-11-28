@@ -6,8 +6,6 @@ import { AppContext } from "../../state/appContext";
 function Navbar() {
   const { activeNav, changeActiveNav } = useContext(AppContext);
 
-  console.log(activeNav);
-
   return (
     <nav className={classes.navbar}>
       <Container className={classes.navbar_container}>
