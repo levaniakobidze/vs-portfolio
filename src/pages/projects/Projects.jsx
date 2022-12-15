@@ -1,11 +1,13 @@
-import React from "react";
+import React,{useContext} from "react";
 import Container from "../../components/Container/Container";
 import LeftSideBarCont from "../../components/LeftSideBarCont/LeftSideBarCont";
 import classes from "./Projects.module.css";
 import x from "../../assets/x.svg";
-import ProjectSlider from "../../components/ProjectSlider/ProjectSlider";
+import { AppContext } from "../../state/appContext";
+import Project from '../../components/Project/Project'
 
 function Projects() {
+  const {projects} = useContext(AppContext)
   return (
     <section className={classes.projects}>
       <Container className={classes.projects_container}>
@@ -23,7 +25,9 @@ function Projects() {
             </p>
           </div>
           <div className={classes.projects_list}>
-          <ProjectSlider />
+          {projects.map((project, index) => {
+                return  <Project key={project.id} indx={index} {...project} />;
+            })}
           </div>
         </div>
       </Container>

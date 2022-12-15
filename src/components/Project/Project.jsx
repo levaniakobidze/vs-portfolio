@@ -14,7 +14,7 @@ function Projects({ img, indx, title, host, github }) {
   };
 
   return (
-    <div className={classes.project} data-aos='fade-up' data-aos-duration='500'>
+    <div className={classes.project} >
       <div className={classes.num_and_title}>
         <p className={classes.project_num}>Project {indx + 1}</p>
         <p className={classes.project_title}>
@@ -24,11 +24,6 @@ function Projects({ img, indx, title, host, github }) {
       </div>
       <div
         className={classes.image_and_description}
-        // style={{
-        //   boxShadow: `0 0px 7px 0.01px ${
-        //     isHover ? `#${randomColor}` : "transparent"
-        //   } `,
-        // }}
         onMouseOver={onProjectMouseOver}
         onMouseLeave={onProjectMouseLeave}>
         <div className={classes.project_image_cont}>

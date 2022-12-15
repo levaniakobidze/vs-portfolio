@@ -30,9 +30,7 @@ const ProjectSlider = () => {
                 } }
         >
             {projects.map((project, index) => {
-                return <SplideSlide>
-                    <Project key={project.id} indx={index} {...project} />;
-                </SplideSlide>
+                return  <Project key={project.id} indx={index} {...project} />;
             })}
 
 
