@@ -1,17 +1,28 @@
-import { useState } from "react";
-import { Children, createContext } from "react";
-import {data} from '../components/Project/ProjectsData'
+import { useEffect, useState } from "react";
+import { createContext } from "react";
+import useFetchData from '../hooks/useFetchData'
+import { dummyData } from "../components/Project/ProjectsData";
+
+
 export const AppContext = createContext();
 
 const ContextProvier = (props) => {
-  const [projects,setProjects] = useState(data);
+  const PROJECTS_URL = 'https://projects-api-production.up.railway.app/projects';
+  const [projects,setProjects] = useState(dummyData);
   // NAVBAR STATES AND FUNCTIONS
   const [activeNav, setActiveNav] = useState("_hello");
   const changeActiveNav = (e) => {
-    console.log(e.target.innerText);
     setActiveNav(e.target.innerText);
   };
-  //////////////////////////////////
+
+  // Fetch projects
+ const {data} = useFetchData(PROJECTS_URL)
+
+ useEffect(() => {
+  setProjects(data.length ? data : dummyData) 
+ },[data])
+
+ console.log(data);
 
   return (
     <AppContext.Provider value={{ activeNav, changeActiveNav,projects}}>

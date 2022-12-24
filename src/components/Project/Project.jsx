@@ -1,17 +1,10 @@
 import React from "react";
-import { useState } from "react";
 import classes from "./Project.module.css";
 
-function Projects({ img, indx, title, host, github }) {
-  const [isHover, setIsHover] = useState(false);
-  var randomColor = Math.floor(Math.random() * 16777215).toString(16);
+function Projects({ image, indx, title, live, github }) {
 
-  const onProjectMouseOver = () => {
-    setIsHover(true);
-  };
-  const onProjectMouseLeave = () => {
-    setIsHover(false);
-  };
+
+
 
   return (
     <div className={classes.project} >
@@ -24,17 +17,16 @@ function Projects({ img, indx, title, host, github }) {
       </div>
       <div
         className={classes.image_and_description}
-        onMouseOver={onProjectMouseOver}
-        onMouseLeave={onProjectMouseLeave}>
+      >
         <div className={classes.project_image_cont}>
-          <img src={img} alt='project_image' />
+          <img src={image} alt='project_image' />
         </div>
         <p className={classes.project_description}>{title}</p>
         <div className={classes.view_project_btn_cont}>
           <a href={github} target='_blank' rel='noreferrer'>
             view-code
           </a>
-          <a href={host} target='_blank' rel='noreferrer'>
+          <a href={live} target='_blank' rel='noreferrer'>
             view-live
           </a>
         </div>
