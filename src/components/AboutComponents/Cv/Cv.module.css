@@ -1,0 +1,13 @@
+.cv_cont{
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    margin-top: 30px;
+}
+
+.cv_cont img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 20px;
+}

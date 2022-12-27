@@ -99,10 +99,36 @@
   left: -30%;
   top: 0%;
   width: 100%;
+  animation: light 4s forwards infinite ;
 }
 .blue_light {
   position: absolute;
   left: 20%;
   bottom: -10%;
   width: 90%;
+  animation: light 4s forwards infinite ;
+
+}
+
+
+
+@keyframes light {
+
+  0%{
+    opacity: 0.9;
+  }
+  30%{
+    opacity: 0.6;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  80%{
+    opacity: 0.8;
+  }
+  100%{
+    opacity: 1;
+  }
+
+  
 }

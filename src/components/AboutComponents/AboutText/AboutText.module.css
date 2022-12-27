@@ -1,0 +1,26 @@
+.about_text{
+    padding: 20px;
+}
+.text_cont{
+    display: flex;
+    flex-direction: column;
+}
+.text{
+ display: flex;
+font-family: 'Fira Code';
+font-style: normal;
+font-weight: 450;
+font-size: 18px;
+line-height: 150%;
+/* or 27px */
+color: #607B96;
+}
+.number{
+    display: flex;
+    text-align: right;
+    justify-content: right;
+    width: 20px;
+}
+.star{
+    margin: 0 15px;
+}

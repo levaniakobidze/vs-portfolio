@@ -10,16 +10,20 @@ import red_folder from '../../assets/red_folder.svg';
 import green_folder from '../../assets/blue_folder.svg';
 import profileImg from '../../assets/profile.png';
 import cvImg from '../../assets/cv.png';
+import Cv from "../../components/AboutComponents/Cv/Cv";
 
 
 import {AboutContext} from '../../state/aboutContext'
+import Picture from "../../components/AboutComponents/Picture/Picture";
+import AboutText from "../../components/AboutComponents/AboutText/AboutText";
+import RightCont from "../../components/AboutComponents/RightCont/RightCont";
 
 
 function About() {
   const {
     info,
     contact,
-    bio,
+    skills,
     education,
     photo,
     cv,
@@ -54,10 +58,10 @@ function About() {
               { info && 
                  <div className={classes.sub_section_wrapper}>
                  <div className={classes.sub_section}
-                  onClick={() => makeSectionActive('bio')}>
-                   <img className={bio ? classes.active_sub_section : ''} src={dark_arrow} alt="arrow" />
+                  onClick={() => makeSectionActive('skills')}>
+                   <img className={skills ? classes.active_sub_section : ''} src={dark_arrow} alt="arrow" />
                    <img className={classes.folder} src={pink_folder} alt="arrow" />
-                   <span className={bio ? classes.active_span : ""}>bio</span>
+                   <span className={skills ? classes.active_span : ""}>skills</span>
                  </div>
                  {/* // */}
                  <div className={classes.sub_section}
@@ -126,7 +130,7 @@ function About() {
               className={classes.top_bar_contact}
               data-aos='fade-left'
               data-aos-duration='2000'>
-              about <span>x</span>
+              about <span onClick={() => window.location = '/'}>x</span>
             </p>
             {navData && navData.map(navItem => {
             return  <p key={navItem.id} onClick={() => removeFromNav(navItem.id)}
@@ -141,20 +145,21 @@ function About() {
         <div className={classes.middle}>
 
           {
-          aboutMainContent ? 
-          <h1>asdasdasd</h1>:
+          aboutMainContent &&
+        <AboutText />
+        }
+         {
           cvPhoto && 
-            <img src={cvImg} alt='cv'
-            />
+          <Cv />
           }
           {
             profilePhoto && 
-            <img src={profileImg} alt='cv'/>
+           <Picture />
           }
-           
         </div>
-
-        <div className={classes.right}>asdasdasda</div>
+        <div className={classes.right}>
+          <RightCont />
+        </div>
         </div>
           </div>
       </Container>

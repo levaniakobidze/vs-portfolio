@@ -7,7 +7,7 @@ const ContextProvider  = (props) => {
 
     const [info,setInfo] = useState(false)
     const [contact,setContact] = useState(false)
-    const [bio,setBio] = useState(false)
+    const [skills,setSkills] = useState(false)
     const [education,setEducation] = useState(false)
     const [photo,setPhoto] = useState(false)
     const [cv,setCv] = useState(false)
@@ -15,7 +15,7 @@ const ContextProvider  = (props) => {
     const [navData, setNavData] = useState([])
     const [cvPhoto,setCvPhoto] = useState(false)
     const [profilePhoto,setProfilePhoto] = useState(false)
-    const [aboutMainContent,setAboutMainContent] = useState(false)
+    const [aboutMainContent,setAboutMainContent] = useState(true)
 
 
 
@@ -29,8 +29,8 @@ const ContextProvider  = (props) => {
             case 'contact':
                     setContact(prev => !prev)
                 break;
-            case 'bio':
-                setBio(prev => !prev)
+            case 'skills':
+                setSkills(prev => !prev)
                  break;
             case 'education':
                 setEducation(prev => !prev)
@@ -52,7 +52,7 @@ const ContextProvider  = (props) => {
             info,
             contact,
             makeSectionActive,
-            bio,
+            skills,
             education,
             photo,
             cv,
