@@ -16,6 +16,8 @@ const ContextProvider  = (props) => {
     const [cvPhoto,setCvPhoto] = useState(false)
     const [profilePhoto,setProfilePhoto] = useState(false)
     const [aboutMainContent,setAboutMainContent] = useState(true)
+    const [skillsContent,setSkillsContent] = useState(false)
+
 
 
 
@@ -65,7 +67,9 @@ const ContextProvider  = (props) => {
             setProfilePhoto,
             // //////
             aboutMainContent,
-            setAboutMainContent
+            setAboutMainContent,
+            skillsContent,
+            setSkillsContent
             
         }}>
             {props.children}

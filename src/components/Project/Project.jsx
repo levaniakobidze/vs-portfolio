@@ -21,7 +21,7 @@ function Projects({ image, indx, title, live, github }) {
         <div className={classes.project_image_cont}>
           <img src={image} alt='project_image' />
         </div>
-        <p className={classes.project_description}>{title}</p>
+        <p className={classes.project_description}>{title.substr(0, 15)}</p>
         <div className={classes.view_project_btn_cont}>
           <a href={github} target='_blank' rel='noreferrer'>
             view-code

@@ -113,3 +113,25 @@ line-height: 21px;
   width: 100%;
   display: flex;
 }
+
+.skills_cont{
+  width: 90%;
+  height: 50px;
+  background-color: #1E2D3D;
+  cursor: pointer;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 0 10000px 1px  #011627 inset;
+  transition: all 0.5s;
+}
+.skills_cont:hover{
+  box-shadow: 0 0 100px 1px  #011627 inset;
+}
+.skills_cont img {
+  width: 23px;
+  height: 23px;
+  transition: all 0.3s;
+}

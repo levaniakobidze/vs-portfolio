@@ -17,6 +17,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
+  animation: light 2s forwards infinite;
 }
 .project_title {
   font-family: "Fira Code";
@@ -99,4 +100,25 @@
 .view_project_btn_cont a:hover {
   background-color: #c07a45;
   color: #fff;
+}
+
+
+@keyframes light {
+
+  0%{
+    color: #5b66ce;
+  }
+  40%{
+    color: #3a46a1;
+  }
+  60%{
+    color: #3e4baa;
+  }
+  80%{
+  color: #4855b8;
+  }
+  100%{
+  color: #5b6cf1;
+  }
+  
 }

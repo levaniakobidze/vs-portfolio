@@ -10,6 +10,10 @@ import red_folder from '../../assets/red_folder.svg';
 import green_folder from '../../assets/blue_folder.svg';
 import profileImg from '../../assets/profile.png';
 import cvImg from '../../assets/cv.png';
+import react from '../../assets/react.svg';
+import html from '../../assets/html.svg';
+import css from '../../assets/css.svg';
+import vue from '../../assets/vue.svg';
 import Cv from "../../components/AboutComponents/Cv/Cv";
 
 
@@ -17,6 +21,7 @@ import {AboutContext} from '../../state/aboutContext'
 import Picture from "../../components/AboutComponents/Picture/Picture";
 import AboutText from "../../components/AboutComponents/AboutText/AboutText";
 import RightCont from "../../components/AboutComponents/RightCont/RightCont";
+import Skills from "../../components/AboutComponents/Skills/Skills";
 
 
 function About() {
@@ -35,7 +40,10 @@ function About() {
     setProfilePhoto,
     aboutMainContent,
     setAboutMainContent,
-    makeSectionActive} = useContext(AboutContext)
+    makeSectionActive,
+    skillsContent,
+    setSkillsContent,
+  } = useContext(AboutContext)
 
     const removeFromNav = (id) => {
       setNavData(navData.filter(item => item.id !== id));
@@ -63,6 +71,21 @@ function About() {
                    <img className={classes.folder} src={pink_folder} alt="arrow" />
                    <span className={skills ? classes.active_span : ""}>skills</span>
                  </div>
+                 {
+                  skills && 
+                  <div className={classes.skills_cont} onClick={() => {
+                    setNavData([{id:4,name:'skills'}]) 
+                    setCvPhoto(false)
+                    setAboutMainContent(false)
+                    setProfilePhoto(false)
+                    setSkillsContent(true)
+                  }} >
+                    <img src={html} alt="html" />
+                    <img src={css} alt="css" />
+                    <img src={react} alt="react" />
+                    <img src={vue} alt="vue" />
+                  </div>
+                 }
                  {/* // */}
                  <div className={classes.sub_section}
                   onClick={() => makeSectionActive('education')}>
@@ -155,6 +178,10 @@ function About() {
           {
             profilePhoto && 
            <Picture />
+          }
+          {
+            skillsContent && 
+            <Skills />
           }
         </div>
         <div className={classes.right}>
