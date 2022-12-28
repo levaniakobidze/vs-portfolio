@@ -1,0 +1,90 @@
+.skills {
+    width: 100%;
+    padding: 20px;
+}
+.skills_list{
+    display: flex;
+    flex-wrap:wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.skill{
+    width: 90px;
+    height: 80px;
+    background-color: #1E2D3D;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.skill_icon{
+    color: #607B96;
+    font-size: 30px;
+}
+.mongoose{
+    color: #607B96;
+    font-size: 14px;
+}
+.skill_name{
+    font-size: 12px;
+    margin-top: 5px;
+    color: #607B96;
+}
+
+.skill{
+    transition: all 0.3s;
+}
+.skill:hover{
+background-color: #011221;
+}
+.skill:hover > .html{
+    color: orangered;
+}
+.skill:hover > .css{
+    color: blue;
+}
+.skill:hover > .sass{
+    color: palevioletred;
+}
+.skill:hover > .bootstrap{
+    color: purple;
+}
+.skill:hover > .js{
+    color: yellow;
+}
+.skill:hover > .react{
+    color: cyan;
+}
+.skill:hover > .router{
+    color: red;
+}
+.skill:hover > .redux{
+    color: purple;
+}
+.skill:hover > .git{
+    color: orangered;
+}
+.skill:hover > .figma{
+    color: purple;
+}
+.skill:hover > .xd{
+    color: palevioletred;
+}
+.skill:hover > .node{
+    color: rgb(0, 255, 0);
+}
+.skill:hover > .express{
+    color: #fff;
+}
+.skill:hover > .mongodb{
+    color: rgb(0, 172, 0);
+}
+.skill:hover > .mongoose{
+    color: orangered;
+}
+
+
+
+

@@ -135,6 +135,7 @@ function About() {
                    setCvPhoto(true)
                    setAboutMainContent(false)
                    setProfilePhoto(false)
+                   setSkillsContent(false)
                   }
                   }
                    />
