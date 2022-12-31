@@ -3,7 +3,7 @@ import classes from './AboutText.module.css'
 
 function AboutText() {
   return (
-    <div className={classes.about_text}>
+    <div className={classes.about_text} data-aos='fade-up' data-aos-duration='800'>
       <div className={classes.text_cont}>
           <div className={classes.text}>
             <span className={classes.number}>1</span>

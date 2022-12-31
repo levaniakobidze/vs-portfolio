@@ -9,7 +9,7 @@ import star from '../../../assets/star.svg'
 function RightCont() {
   return (
     <div className={classes.right_cont}>
-        <div className={classes.user_cont}>
+        <div className={classes.user_cont} data-aos='fade-up' data-aos-duration='500'>
           <div className={classes.user_header}>
             <div className={classes.user_info}>
                 <div className={classes.user_image}>
@@ -36,7 +36,7 @@ function RightCont() {
           </div>
         </div>
         {/* ////////////////////////////////////////////////////////////////////// */}
-        <div className={classes.user_cont}>
+        <div className={classes.user_cont} data-aos='fade-up' data-aos-duration='800'>
           <div className={classes.user_header}>
             <div className={classes.user_info}>
                 <div className={classes.user_image}>
