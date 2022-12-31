@@ -89,6 +89,59 @@ background-color: #011221;
 }
 
 
+/* //// */
+
+
+.def_html{
+    color: orangered;
+}
+.def_css{
+    color: blue;
+}
+.def_sass{
+    color: palevioletred;
+}
+.def_bootstrap{
+    color: purple;
+}
+.def_js{
+    color: yellow;
+}
+.def_react{
+    color: cyan;
+}
+.def_router{
+    color: red;
+}
+.def_redux{
+    color: purple;
+}
+.def_vue{
+    color: rgb(0, 170, 99);
+}
+.def_git{
+    color: orangered;
+}
+.def_figma{
+    color: purple;
+}
+.def_xd{
+    color: palevioletred;
+}
+.def_node{
+    color: rgb(0, 255, 0);
+}
+.def_express{
+    color: #fff;
+}
+.def_mongodb{
+    color: rgb(0, 172, 0);
+}
+.def_mongoose{
+    color: orangered;
+}
+
+
 
 .description_header{
     display: flex;

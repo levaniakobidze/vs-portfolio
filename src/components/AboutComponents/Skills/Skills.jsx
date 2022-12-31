@@ -4,6 +4,8 @@ import { SkillsContext } from '../../../state/skillsContext'
 
 function Skills() {
   const { skillset, getSkill,skillDetails} = useContext(SkillsContext)
+  console.log(skillset)
+  console.log(skillDetails)
   return (
     <div className={classes.skills}>
     <div className={classes.skills_list}>
@@ -17,8 +19,8 @@ function Skills() {
     {skillDetails && <div className={classes.skill_description_wrapper}>
       <div className={classes.description_header}>
         <p>{skillDetails.name}</p>
-        <p>.-.-.-.-.-.-.-</p>
-      <skillDetails.icon className={`${classes.skill_icon}  ${classes.description_icon}`} />
+        <p>-.-.-.-.-.-.-</p>
+      <skillDetails.icon className={`${classes.skill_icon}  ${classes.description_icon} ${skillDetails.def_class}`} />
       </div>
       <div className={classes.description_text}>
       <p>{skillDetails.description}</p>
