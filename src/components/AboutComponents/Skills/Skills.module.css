@@ -63,6 +63,9 @@ background-color: #011221;
 .skill:hover > .redux{
     color: purple;
 }
+.skill:hover > .vue{
+    color: rgb(0, 170, 99);
+}
 .skill:hover > .git{
     color: orangered;
 }
@@ -86,5 +89,31 @@ background-color: #011221;
 }
 
 
+
+.description_header{
+    display: flex;
+    justify-content: space-between;  
+    margin-top: 20px;
+    animation: slide 1s forwards;
+    padding:  0 10px;
+}
+.description_header p {
+    font-size: 20px;
+    color: #fff;
+}
+.description_icon{
+    font-size: 35px;
+}
+.skill_description_wrapper{
+    animation: slide 1s forwards;
+}
+.description_text{
+    width: 100%;
+    margin-top:10px;
+}
+.description_text p {
+    text-align: center;
+    color: rgb(156, 156, 156);
+}
 
 

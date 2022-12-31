@@ -16,7 +16,6 @@ function Projects() {
         </div>
         <div className={classes.right}>
           <div className={classes.top_bar}>
-            {" "}
             <p
               className={classes.top_bar_contact}
               data-aos='fade-left'

@@ -20,8 +20,6 @@ const ContextProvier = (props) => {
   setProjects(data.length ? data : dummyData) 
  },[data])
 
- console.log(data);
-
   return (
     <AppContext.Provider value={{ activeNav, changeActiveNav,projects}}>
       {props.children}

@@ -15,8 +15,6 @@ import html from '../../assets/html.svg';
 import css from '../../assets/css.svg';
 import vue from '../../assets/vue.svg';
 import Cv from "../../components/AboutComponents/Cv/Cv";
-
-
 import {AboutContext} from '../../state/aboutContext'
 import Picture from "../../components/AboutComponents/Picture/Picture";
 import AboutText from "../../components/AboutComponents/AboutText/AboutText";

@@ -19,10 +19,6 @@ const ContextProvider  = (props) => {
     const [skillsContent,setSkillsContent] = useState(false)
 
 
-
-
-
-
     const makeSectionActive = (value) => {
         switch (value) {
             case 'info':
@@ -47,8 +43,6 @@ const ContextProvider  = (props) => {
                 return null;
         }
     }
-
-
     return (
         <AboutContext.Provider value={{
             info,
