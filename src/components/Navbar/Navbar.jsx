@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Container from "../Container/Container";
 import classes from "./Navbar.module.css";
 import { AppContext } from "../../state/appContext";
+import profile from '../../assets/profile.png'
 function Navbar() {
   const { activeNav, changeActiveNav } = useContext(AppContext);
 
@@ -43,10 +44,8 @@ function Navbar() {
                 _projects
               </Link>
             </li>
-          </ul>
-        </div>
-        <div className={classes.right}>
-          <Link
+            <li>
+            <Link
             className={
               activeNav === "_contact-me" ? `${classes.active_link}` : ""
             }
@@ -54,6 +53,13 @@ function Navbar() {
             onClick={changeActiveNav}>
             _contact-me
           </Link>
+            </li>
+          </ul>
+        </div>
+        <div className={classes.right}>
+          <div className={classes.profile_avatar}>
+            <img src={profile} alt="avatar" />
+          </div>
         </div>
       </Container>
     </nav>

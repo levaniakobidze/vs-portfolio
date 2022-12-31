@@ -72,3 +72,16 @@
   text-align: right;
   color: #607b96;
 }
+.profile_avatar{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  padding: 1px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.profile_avatar img {
+  width: 100%;
+  border-radius: 50%;
+}
