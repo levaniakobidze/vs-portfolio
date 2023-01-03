@@ -44,7 +44,7 @@ function Navbar() {
                 _projects
               </Link>
             </li>
-            <li>
+            <li data-aos='fade-left' data-aos-duration='1400'>
             <Link
             className={
               activeNav === "_contact-me" ? `${classes.active_link}` : ""

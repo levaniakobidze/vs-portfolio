@@ -1,79 +1,28 @@
 import React from 'react'
 import classes from './AboutText.module.css'
+import profileImg from '../../../assets/profile.png'
+import code_snippet from '../../../assets/code_snippet.svg'
+import github from '../../../assets/github.png'
+
 
 function AboutText() {
   return (
     <div className={classes.about_text} data-aos='fade-up' data-aos-duration='800'>
       <div className={classes.text_cont}>
-          <div className={classes.text}>
-            <span className={classes.number}>1</span>
-            <span className={classes.star}> * </span>
-            <p className={classes.text_p}>/**</p>
-          </div>
-          <div className={classes.text}>
-            <span className={classes.number}>2</span>
-            <span className={classes.star}> * </span>
-            <p className={classes.text_p}>   Lorem, ipsum dolor sit amet</p>
-          </div><div className={classes.text}>
-            <span className={classes.number}>3</span>
-            <span className={classes.star}> * </span>
-            <p className={classes.text_p}>Lorem, ipsum dolor sit amet</p>
-          </div><div className={classes.text}>
-            <span className={classes.number}>4</span>
-            <span className={classes.star}> * </span>
-            <p className={classes.text_p}>Lorem, ipsum dolor sit amet</p>
-          </div><div className={classes.text}>
-            <span className={classes.number}>5</span>
-            <span className={classes.star}> * </span>
-            <p className={classes.text_p}>Lorem, ipsum dolor sit amet</p>
-          </div>
-          <div className={classes.text}>
-            <span className={classes.number}>6</span>
-            <span className={classes.star}> * </span>
-            <p className={classes.text_p}>Lorem, ipsum dolor sit amet</p>
-          </div><div className={classes.text}>
-            <span className={classes.number}>7</span>
-            <span className={classes.star}> * </span>
-            <p className={classes.text_p}>Lorem, ipsum dolor sit amet</p>
-          </div><div className={classes.text}>
-            <span className={classes.number}>8</span>
-            <span className={classes.star}> * </span>
-            <p className={classes.text_p}>Lorem, ipsum dolor sit amet</p>
-          </div><div className={classes.text}>
-            <span className={classes.number}>9</span>
-            <span className={classes.star}> * </span>
-            <p className={classes.text_p}>Lorem, ipsum dolor sit amet</p>
-          </div>
-          <div className={classes.text}>
-            <span className={classes.number}>10</span>
-            <span className={classes.star}> * </span>
-            <p className={classes.text_p}>Lorem, ipsum dolor sit amet</p>
-          </div>
-          <div className={classes.text}>
-            <span className={classes.number}>11</span>
-            <span className={classes.star}> * </span>
-            <p className={classes.text_p}>Lorem, ipsum dolor sit amet</p>
-          </div>
-          <div className={classes.text}>
-            <span className={classes.number}>12</span>
-            <span className={classes.star}> * </span>
-            <p className={classes.text_p}>Lorem, ipsum dolor sit amet</p>
-          </div>
-          <div className={classes.text}>
-            <span className={classes.number}>13</span>
-            <span className={classes.star}> * </span>
-            <p className={classes.text_p}>Lorem, ipsum dolor sit amet</p>
-          </div>
-          <div className={classes.text}>
-            <span className={classes.number}>14</span>
-            <span className={classes.star}> * </span>
-            <p className={classes.text_p}>Lorem, ipsum dolor sit amet</p>
-          </div>
-          <div className={classes.text}>
-            <span className={classes.number}>15</span>
-            <span className={classes.star}> * </span>
-            <p className={classes.text_p}>/**</p>
-          </div>
+      <p className={classes.comment}>{'/**'}</p>
+      <p>
+     <img src={profileImg} alt="profile" />
+        I'm an enthusiastic and detail-oriented Front-end / React.js developer
+         with more than one year
+          experience working on personal and group (voluntary) React.js projects.
+           I believe that my technical
+          skills and knowledge of Html, Css, JavaScript and React.js will render
+           me a valuable addition to your
+          web development team.</p>
+      <p className={classes.comment}>{'/**'}</p>
+      </div>
+      <div className={classes.code_snippet}>
+        <img src={github} alt="code" />
       </div>
     </div>
   )
