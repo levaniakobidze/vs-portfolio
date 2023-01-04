@@ -7,7 +7,7 @@ import { dummyData } from "../components/Project/ProjectsData";
 export const AppContext = createContext();
 
 const ContextProvier = (props) => {
-  const PROJECTS_URL = 'https://projects-api-production.up.railway.app/projects';
+  const PROJECTS_URL = 'https://portfolio-projects.onrender.com/projects';
   const [projects,setProjects] = useState(dummyData);
   const [activeNav, setActiveNav] = useState("_hello");
   const changeActiveNav = (e) => {
@@ -18,6 +18,7 @@ const ContextProvier = (props) => {
 
  useEffect(() => {
   setProjects(data.length ? data : dummyData) 
+  console.log(data);
  },[data])
 
   return (
