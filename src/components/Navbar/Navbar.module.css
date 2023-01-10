@@ -11,7 +11,10 @@
   height: auto;
   box-sizing: border-box;
 }
-
+.left_main{
+  display: flex;
+  align-items: center;
+}
 .left {
   display: flex;
   align-items: center;
@@ -84,4 +87,60 @@
 .profile_avatar img {
   width: 100%;
   border-radius: 50%;
+}
+.mobile_menu_icon{
+  display: none;
+}
+.close_menu_icon {
+  display: none;
+  }
+
+
+/* ?? Media quaries */
+
+@media screen and (max-width: 1024px) {
+  .right{
+    display: none;
+  }
+
+  .navbar_container{
+    padding: 0 30px;
+  }
+  .logo{
+    border-right: 1px solid transparent;
+  }
+  .mobile_menu_icon{
+    display: block;
+  }
+  /* ?? Mobile menu */
+  .navbar_menu{
+    position: absolute;
+    top: 0%;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color:#011627;
+    z-index: 100;
+    align-items: flex-start !important;
+    justify-content: left;
+    transition: all 0.3s ease;
+  }
+  .close_menu_icon {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding: 30px 30px;
+    }
+  .navbar_menu li {
+    width: 100%;
+  }
+  .navbar_menu li a {
+    width: 100%;
+    border-bottom: 1px solid #1E2D3D;
+  }
+  .navbar_menu_active{
+    left: 0 !important;
+  }
 }

@@ -132,3 +132,71 @@
 
   
 }
+
+@media  all and (max-width:1024px) {
+  .left{
+    margin-top: 130px;
+  }
+  .hello{
+   padding: 20px;
+  }
+  .hello_container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+}
+
+@media  all and (max-width:768px) {
+  .right{
+     display: none;
+   }
+   .hello{
+    padding: 20px;
+   }
+   .hello_container {
+     display: flex;
+     flex-direction: row;
+     align-items: flex-start;
+   }
+   .left{
+     margin-top: 120px;
+   }
+   .name {
+    font-size: 68px; 
+  }
+   .profession {
+    font-size: 20px;  
+    color:#43D9AD;
+  }
+  .below_text {
+    width: 100%;
+    margin-top: 220px;
+  }
+  .comment{
+    font-size: 14px;
+  }
+  .comment::after{
+    content: '';
+    width: 230px;
+    height: 230px;
+    background-color: #4D5BCE;
+    opacity: 0.4;
+filter: blur(87px);
+    position: absolute;
+    top: 40%;
+    left: 40%;
+  }
+  .comment::before{
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 230px;
+    height: 230px;
+    background-color:#43D9AD;
+    opacity: 0.4;
+    filter: blur(87px);
+  }
+ }

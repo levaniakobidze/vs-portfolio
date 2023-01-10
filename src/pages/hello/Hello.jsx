@@ -17,10 +17,7 @@ function Hello() {
           </div>
           <div className={classes.below_text}>
             <p className={classes.comment}>
-            {'// you can see all my projects on my Github page'}
-            </p>
-            <p className={classes.comment}>
-              {'// you can see all my projects on my Github page'}
+              {'// find my profile on Github:'}
             </p>
             <span className={classes.github_link_cont}>
               <span className={classes.const}>const </span>
