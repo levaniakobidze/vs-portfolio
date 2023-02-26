@@ -41,7 +41,7 @@
 .contact_cont {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .form {
@@ -54,7 +54,8 @@
   padding-top: 70px;
 }
 .inputs_cont {
-  width: 372px;
+  width: 100%;
+  padding: 0 20px;
 }
 .input_cont {
   display: flex;
@@ -138,7 +139,6 @@
   padding: 10px;
   display: flex;
   flex-direction: column;
-  width: 600px;
 }
 .code {
   font-family: "Fira Code";
@@ -147,6 +147,7 @@
   font-size: 14px;
   line-height: 150%;
   display: flex;
+  flex-wrap: wrap;
   word-wrap: break-word;
   white-space: pre-line;
 }
@@ -179,7 +180,6 @@
   color: #5565e8;
   word-wrap: break-word;
   white-space: pre-line;
-  width: 90%;
 }
 .string {
   color: #fea55f !important;
@@ -188,4 +188,21 @@
 }
 .bracket {
   color: #43d9ad;
+}
+
+@media screen and (max-width: 768px) {
+  .design_main_cont {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    display: none;
+  }
+  .form {
+    width: 100%;
+    border-right: 0;
+  }
+  .inputs_cont {
+    width: 100%;
+  }
 }

@@ -2,6 +2,7 @@
   width: auto;
   display: flex;
   flex-direction: column;
+  width: 300px;
 }
 
 .num_and_title {
@@ -92,8 +93,6 @@
   background: #111c28;
   border-radius: 8px;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
   align-items: center;
   transition: all 0.3s;
 }
@@ -102,23 +101,34 @@
   color: #fff;
 }
 
-
 @keyframes light {
-
-  0%{
+  0% {
     color: #5b66ce;
   }
-  40%{
+  40% {
     color: #3a46a1;
   }
-  60%{
+  60% {
     color: #3e4baa;
   }
-  80%{
-  color: #4855b8;
+  80% {
+    color: #4855b8;
   }
-  100%{
-  color: #5b6cf1;
+  100% {
+    color: #5b6cf1;
   }
-  
+}
+
+@media all and (max-width: 765px) {
+  .project {
+    width: 250px;
+    flex: 1;
+  }
+  .project_num {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .project_title {
+    font-size: 12px;
+  }
 }

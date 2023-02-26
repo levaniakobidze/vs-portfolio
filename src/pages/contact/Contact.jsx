@@ -39,9 +39,9 @@ function Contact() {
             {" "}
             <p
               className={classes.top_bar_contact}
-              data-aos='fade-left'
-              data-aos-duration='2000'>
-              contacts <img src={x} alt='x' />
+              data-aos="fade-left"
+              data-aos-duration="2000">
+              contacts <img src={x} alt="x" />
             </p>
           </div>
           <div className={classes.contact_cont}>
@@ -49,12 +49,12 @@ function Contact() {
               <div className={classes.inputs_cont}>
                 <div
                   className={classes.input_cont}
-                  data-aos='fade-up'
-                  data-aos-duration='500'>
-                  <label htmlFor='name'>-name:</label>
+                  data-aos="fade-up"
+                  data-aos-duration="500">
+                  <label htmlFor="name">-name:</label>
                   <input
-                    name='name'
-                    type='text'
+                    name="name"
+                    type="text"
                     className={classes.name_input}
                     value={name}
                     onChange={nameChangeHandler}
@@ -62,12 +62,12 @@ function Contact() {
                 </div>
                 <div
                   className={classes.input_cont}
-                  data-aos='fade-up'
-                  data-aos-duration='800'>
-                  <label htmlFor='email'>_email:</label>
+                  data-aos="fade-up"
+                  data-aos-duration="800">
+                  <label htmlFor="email">_email:</label>
                   <input
-                    name='email'
-                    type='email'
+                    name="email"
+                    type="email"
                     className={classes.name_input}
                     value={email}
                     onChange={emailChangeHandler}
@@ -75,30 +75,30 @@ function Contact() {
                 </div>
                 <div
                   className={classes.input_cont}
-                  data-aos='fade-up'
-                  data-aos-duration='1000'>
-                  <label htmlFor='message'>message:</label>
+                  data-aos="fade-up"
+                  data-aos-duration="1000">
+                  <label htmlFor="message">message:</label>
                   <textarea
-                    name='message'
-                    id='message'
-                    cols='30'
-                    rows='10'
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="10"
                     value={message}
                     onChange={messageChangeHandler}></textarea>
                 </div>
                 <div
                   className={classes.submit_button_cont}
-                  data-aos='fade-up'
-                  data-aos-duration='1000'
-                  data-aos-offset='10'>
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-offset="10">
                   <button>submit-message</button>
                 </div>
               </div>
             </form>
             <div
               className={classes.design}
-              data-aos='fade-up'
-              data-aos-duration='1000'>
+              data-aos="fade-up"
+              data-aos-duration="1000">
               <div className={classes.design_main_cont}>
                 <p className={classes.code}>
                   <p className={classes.line_num}> 1 </p>

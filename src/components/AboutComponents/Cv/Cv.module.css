@@ -1,13 +1,58 @@
-.cv_cont{
-    margin: 0 auto;
-    width: 400px;
-    height: 400px;
-    margin-top: 30px;
+.cv_cont {
+  margin: 0 auto;
+  width: 400px;
+  height: 400px;
+  margin-top: 30px;
 }
 
 .cv_cont img {
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.download_btn_cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.download_btn_cont button {
+  width: 200px;
+  height: 50px;
+  border: 0;
+  outline: 0;
+  border-radius: 10px;
+  background-color: #c07a45;
+  color: #fff;
+  font-family: "Fira Code";
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+.download_btn_cont button:hover {
+  background-color: transparent;
+  color: #c07a45;
+  border: 1px solid #c07a45;
+  /* box-shadow: 0 0 5px 1px #c07a45 inset; */
+  justify-content: center;
+}
+.download_btn_cont button:hover span {
+  font-size: 15px;
+}
+.download_icon {
+  transition: all 0.3s;
+  opacity: 0;
+}
+.download_btn_cont button:hover .download_icon {
+  font-size: 20px;
+  opacity: 1;
+  margin-left: 10px;
 }

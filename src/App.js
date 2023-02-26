@@ -7,10 +7,8 @@ import Projects from "./pages/projects/Projects";
 import About from "./pages/about/About";
 import Footer from "./components/Footer/Footer";
 function App() {
-
-
   return (
-    <div className='App'>
+    <div className="App">
       <Navbar />
       <Routes>
         <Route path={"/"} element={<Hello />} />

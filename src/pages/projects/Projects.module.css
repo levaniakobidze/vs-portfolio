@@ -1,6 +1,5 @@
 .projects {
   width: 100%;
-  min-height: 110vh;
   background-color: #011627;
 }
 .projects_container {
@@ -8,7 +7,6 @@
 }
 .right {
   width: 100%;
-  overflow: hidden;
 }
 
 .top_bar {
@@ -36,15 +34,12 @@
   cursor: pointer;
 }
 .projects_list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  grid-gap: 30px;
-  align-items: stretch;
-  padding: 100px 100px;
-  padding-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 50px;
+  /* padding-bottom: 100px; */
   width: 100%;
-  overflow-y: scroll;
-  height: 100vh;
 }
 .projects_list::-webkit-scrollbar {
   display: none;
