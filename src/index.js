@@ -5,22 +5,19 @@ import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import AppContext from "./state/appContext";
 import AboutContext from "./state/aboutContext";
-import SkillsContext from "./state/skillsContext"
-
+import SkillsContext from "./state/skillsContext";
+import ProjectsContext from "./state/projectsContext";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-
-const Context = (props) =>  (
+const Context = (props) => (
   <AppContext>
     <AboutContext>
-      <SkillsContext>
-          {props.children}
-      </SkillsContext>
+      <ProjectsContext>
+        <SkillsContext>{props.children}</SkillsContext>
+      </ProjectsContext>
     </AboutContext>
   </AppContext>
-) 
-
-
+);
 
 root.render(
   <BrowserRouter>

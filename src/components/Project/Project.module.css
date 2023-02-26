@@ -95,6 +95,9 @@
   cursor: pointer;
   align-items: center;
   transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .view_project_btn_cont a:hover {
   background-color: #c07a45;
