@@ -77,7 +77,7 @@ function Contact() {
                   className={classes.input_cont}
                   data-aos="fade-up"
                   data-aos-duration="1000">
-                  <label htmlFor="message">message:</label>
+                  <label htmlFor="message">_message:</label>
                   <textarea
                     name="message"
                     id="message"

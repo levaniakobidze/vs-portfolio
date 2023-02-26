@@ -46,7 +46,7 @@
   font-size: 25px !important;
   color: #607b96 !important;
 }
-.contact_right p {
+.github_username {
   font-family: "Fira Code";
   font-style: normal;
   font-weight: 450;
@@ -60,4 +60,14 @@
   justify-content: center;
   align-items: center;
   padding: 10px;
+}
+
+@media all and (max-width: 768px) {
+  .footer_container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .github_username {
+    display: none;
+  }
 }
