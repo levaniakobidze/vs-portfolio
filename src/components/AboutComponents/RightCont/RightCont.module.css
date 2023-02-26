@@ -86,4 +86,8 @@
   .right_cont {
     margin: 0;
   }
+  .user_right {
+    display: none;
+    background-color: red;
+  }
 }

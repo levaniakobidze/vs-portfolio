@@ -34,7 +34,7 @@ function ToolsFilter() {
             <img src={react} alt="vue" />
             <span>Vue</span>
           </div>
-          {/* /////////// */}{" "}
+          {/* /////////// */} k
           <div className={classes.filter}>
             <input type="checkbox" name="typescript" id="typescript" />
             <label htmlFor="typescript"></label>
