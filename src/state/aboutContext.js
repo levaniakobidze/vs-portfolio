@@ -13,22 +13,19 @@ const ContextProvider = (props) => {
   const [education, setEducation] = useState(false);
   const [photo, setPhoto] = useState(false);
   const [cv, setCv] = useState(false);
+  const [activeSection, setActiveSection] = useState([
+    { id: 1, name: "text", active: false },
+    { id: 2, name: "contact", active: false },
+    { id: 3, name: "skills", active: false },
+    { id: 4, name: "education", active: false },
+    { id: 5, name: "photo", active: false },
+    { id: 6, name: "cv", active: false },
+    { id: 7, name: "info", active: false },
+  ]);
   // ////////////////////////////////
   const [navData, setNavData] = useState([]);
-  const [cvPhoto, setCvPhoto] = useState(false);
-  const [profilePhoto, setProfilePhoto] = useState(false);
-  const [aboutMainContent, setAboutMainContent] = useState(true);
-  const [skillsContent, setSkillsContent] = useState(false);
   const [activeComponent, setActiveComponent] = useState("text");
-
-  const [aboutContent, setAboutContent] = useState([
-    { id: 1, name: "about_text" },
-    { id: 2, name: "cv" },
-    { id: 3, name: "picture" },
-    { id: 4, name: "skills" },
-    { id: 5, name: "about_text" },
-  ]);
-
+  /// Render About components
   const renderComponent = () => {
     switch (activeComponent) {
       case "cv":
@@ -45,6 +42,20 @@ const ContextProvider = (props) => {
   };
 
   const makeSectionActive = (value) => {
+    const activated = activeSection.map((section) => {
+      if (section.name === value) {
+        const activatedSection = {
+          id: section.id,
+          name: section.name,
+          active: !section.active,
+        };
+        return activatedSection;
+      } else {
+        return section;
+      }
+    });
+    console.log(activated);
+
     switch (value) {
       case "info":
         setInfo((prev) => !prev);
@@ -83,15 +94,6 @@ const ContextProvider = (props) => {
         ////////
         navData,
         setNavData,
-        cvPhoto,
-        setCvPhoto,
-        profilePhoto,
-        setProfilePhoto,
-        // //////
-        aboutMainContent,
-        setAboutMainContent,
-        skillsContent,
-        setSkillsContent,
       }}>
       {props.children}
     </AboutContext.Provider>
