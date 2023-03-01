@@ -2,6 +2,7 @@
   width: 250px;
   border-right: 1px solid #1e2d3d;
   min-height: 100%;
+  /* position: relative; */
 }
 @media screen and (max-width: 1022px) {
   .container {

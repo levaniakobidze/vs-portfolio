@@ -1,5 +1,7 @@
 .tools_filter {
   width: 100%;
+  position: sticky;
+  top: 0%;
 }
 .header {
   height: 50px;
@@ -70,7 +72,6 @@
     width: auto;
   }
   .filter span {
-    /* display: none; */
   }
   .filter img {
     margin: 8px;

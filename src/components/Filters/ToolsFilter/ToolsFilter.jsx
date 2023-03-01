@@ -17,7 +17,7 @@ function ToolsFilter() {
           src={light_arrow}
           alt=""
         />
-        <span>Projects</span>
+        <span>Filters</span>
       </div>
       {showToolsFilter && (
         <div className={classes.filters_list}>
