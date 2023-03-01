@@ -14,12 +14,8 @@ import react from "../../assets/react.svg";
 import html from "../../assets/html.svg";
 import css from "../../assets/css.svg";
 import vue from "../../assets/vue.svg";
-import Cv from "../../components/AboutComponents/Cv/Cv";
 import { AboutContext } from "../../state/aboutContext";
-import Picture from "../../components/AboutComponents/Picture/Picture";
-import AboutText from "../../components/AboutComponents/AboutText/AboutText";
 import RightCont from "../../components/AboutComponents/RightCont/RightCont";
-import Skills from "../../components/AboutComponents/Skills/Skills";
 
 function About() {
   const {
@@ -31,22 +27,14 @@ function About() {
     cv,
     navData,
     setNavData,
-    cvPhoto,
-    setCvPhoto,
-    profilePhoto,
-    setProfilePhoto,
-    aboutMainContent,
-    setAboutMainContent,
     makeSectionActive,
-    skillsContent,
-    setSkillsContent,
+    renderComponent,
+    setActiveComponent,
   } = useContext(AboutContext);
 
   const removeFromNav = (id) => {
     setNavData(navData.filter((item) => item.id !== id));
-    setAboutMainContent(true);
-    setProfilePhoto(false);
-    setCvPhoto(false);
+    setActiveComponent("text");
   };
 
   return (
@@ -89,10 +77,7 @@ function About() {
                       className={classes.skills_cont}
                       onClick={() => {
                         setNavData([{ id: 4, name: "skills" }]);
-                        setCvPhoto(false);
-                        setAboutMainContent(false);
-                        setProfilePhoto(false);
-                        setSkillsContent(true);
+                        setActiveComponent("skills");
                       }}>
                       <img src={html} alt="html" />
                       <img src={css} alt="css" />
@@ -143,9 +128,7 @@ function About() {
                         alt="profile"
                         onClick={() => {
                           setNavData([{ id: 3, name: "profile_photo" }]);
-                          setCvPhoto(false);
-                          setAboutMainContent(false);
-                          setProfilePhoto(true);
+                          setActiveComponent("photo");
                         }}
                       />
                     </div>
@@ -187,10 +170,7 @@ function About() {
                         alt="profile"
                         onClick={() => {
                           setNavData([{ id: 2, name: "cv" }]);
-                          setCvPhoto(true);
-                          setAboutMainContent(false);
-                          setProfilePhoto(false);
-                          setSkillsContent(false);
+                          setActiveComponent("cv");
                         }}
                       />
                     </div>
@@ -223,12 +203,7 @@ function About() {
               })}
           </div>
           <div className={classes.right_main_content}>
-            <div className={classes.middle}>
-              {aboutMainContent && <AboutText />}
-              {cvPhoto && <Cv />}
-              {profilePhoto && <Picture />}
-              {skillsContent && <Skills />}
-            </div>
+            <div className={classes.middle}>{renderComponent()}</div>
             <div className={classes.right}>
               <RightCont />
             </div>
