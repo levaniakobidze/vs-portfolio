@@ -27,9 +27,13 @@ function Projects() {
             </p>
           </div>
           <div className={classes.projects_list}>
-            {projects.map((project, index) => {
-              return <Project key={index} indx={index} {...project} />;
-            })}
+            {projects.length ? (
+              projects.map((project, index) => {
+                return <Project key={index} indx={index} {...project} />;
+              })
+            ) : (
+              <p>Sorry, I don't have projects with selected stacks</p>
+            )}
           </div>
         </div>
       </Container>

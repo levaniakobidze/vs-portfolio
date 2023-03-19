@@ -4,6 +4,7 @@ import classes from "./Contact.module.css";
 import x from "../../assets/x.svg";
 import { useState } from "react";
 import LeftSideBarCont from "../../components/LeftSideBarCont/LeftSideBarCont";
+import emailjs from "emailjs-com";
 
 function Contact() {
   const [name, setName] = useState("");
@@ -28,6 +29,25 @@ function Contact() {
     setMessage(e.target.value);
   };
 
+  const onSubmit = (e) => {
+    e.preventDefault();
+    console.log(e.target);
+    emailjs
+      .sendForm(
+        "service_apoou2n",
+        "template_3uedszp",
+        e.target,
+        "Tcl_Kr_SqrK3-B-bA"
+      )
+      .then(
+        function (response) {
+          console.log("SUCCESS!", response.status, response.text);
+        },
+        function (error) {
+          console.log("FAILED...", error);
+        }
+      );
+  };
   return (
     <section className={classes.contact}>
       <Container className={classes.contact_container}>
@@ -45,7 +65,7 @@ function Contact() {
             </p>
           </div>
           <div className={classes.contact_cont}>
-            <form className={classes.form}>
+            <form className={classes.form} onSubmit={onSubmit}>
               <div className={classes.inputs_cont}>
                 <div
                   className={classes.input_cont}
@@ -54,8 +74,10 @@ function Contact() {
                   <label htmlFor="name">-name:</label>
                   <input
                     name="name"
+                    id="name"
                     type="text"
                     className={classes.name_input}
+                    required
                     value={name}
                     onChange={nameChangeHandler}
                   />
@@ -67,8 +89,10 @@ function Contact() {
                   <label htmlFor="email">_email:</label>
                   <input
                     name="email"
+                    id="email"
                     type="email"
                     className={classes.name_input}
+                    required
                     value={email}
                     onChange={emailChangeHandler}
                   />
@@ -84,6 +108,7 @@ function Contact() {
                     cols="30"
                     rows="10"
                     value={message}
+                    required
                     onChange={messageChangeHandler}></textarea>
                 </div>
                 <div

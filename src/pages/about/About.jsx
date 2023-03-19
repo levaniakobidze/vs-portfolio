@@ -11,9 +11,6 @@ import green_folder from "../../assets/blue_folder.svg";
 import profileImg from "../../assets/profile.png";
 import cvImg from "../../assets/cv.png";
 import react from "../../assets/react.svg";
-import html from "../../assets/html.svg";
-import css from "../../assets/css.svg";
-import vue from "../../assets/vue.svg";
 import { AboutContext } from "../../state/aboutContext";
 import RightCont from "../../components/AboutComponents/RightCont/RightCont";
 
@@ -79,10 +76,8 @@ function About() {
                         setNavData([{ id: 4, name: "skills" }]);
                         setActiveComponent("skills");
                       }}>
-                      <img src={html} alt="html" />
-                      <img src={css} alt="css" />
                       <img src={react} alt="react" />
-                      <img src={vue} alt="vue" />
+                      <p>Skills.jsx</p>
                     </div>
                   )}
                   {/* // */}
@@ -122,15 +117,14 @@ function About() {
                     </span>
                   </div>
                   {photo && (
-                    <div className={classes.photo_cont}>
-                      <img
-                        src={profileImg}
-                        alt="profile"
-                        onClick={() => {
-                          setNavData([{ id: 3, name: "profile_photo" }]);
-                          setActiveComponent("photo");
-                        }}
-                      />
+                    <div
+                      className={classes.skills_cont}
+                      onClick={() => {
+                        setNavData([{ id: 4, name: "photo" }]);
+                        setActiveComponent("photo");
+                      }}>
+                      <img src={react} alt="react" />
+                      <p>Photo.jsx</p>
                     </div>
                   )}
                 </div>
@@ -146,6 +140,38 @@ function About() {
                 <img src={light_arrow} alt="arrow" />
                 <span>contact</span>
               </div>
+
+              {contact && (
+                <div className={classes.sub_section_wrapper}>
+                  <div
+                    className={classes.sub_section}
+                    onClick={() => makeSectionActive("cv")}>
+                    <img
+                      className={cv ? classes.active_sub_section : ""}
+                      src={dark_arrow}
+                      alt="arrow"
+                    />
+                    <img
+                      className={classes.folder}
+                      src={green_folder}
+                      alt="arrow"
+                    />
+                    <span className={cv ? classes.active_span : ""}>Cv</span>
+                  </div>
+                  {cv && (
+                    <div className={classes.photo_cont}>
+                      <img
+                        src={cvImg}
+                        alt="profile"
+                        onClick={() => {
+                          setNavData([{ id: 2, name: "cv" }]);
+                          setActiveComponent("cv");
+                        }}
+                      />
+                    </div>
+                  )}
+                </div>
+              )}
               {contact && (
                 <div className={classes.sub_section_wrapper}>
                   <div
@@ -161,7 +187,42 @@ function About() {
                       src={red_folder}
                       alt="arrow"
                     />
-                    <span className={cv ? classes.active_span : ""}>Cv</span>
+                    <span className={cv ? classes.active_span : ""}>
+                      Github
+                    </span>
+                  </div>
+                  {cv && (
+                    <div className={classes.photo_cont}>
+                      <img
+                        src={cvImg}
+                        alt="profile"
+                        onClick={() => {
+                          setNavData([{ id: 2, name: "cv" }]);
+                          setActiveComponent("cv");
+                        }}
+                      />
+                    </div>
+                  )}
+                </div>
+              )}
+              {contact && (
+                <div className={classes.sub_section_wrapper}>
+                  <div
+                    className={classes.sub_section}
+                    onClick={() => makeSectionActive("cv")}>
+                    <img
+                      className={cv ? classes.active_sub_section : ""}
+                      src={dark_arrow}
+                      alt="arrow"
+                    />
+                    <img
+                      className={classes.folder}
+                      src={blue_folder}
+                      alt="arrow"
+                    />
+                    <span className={cv ? classes.active_span : ""}>
+                      LinkedIn
+                    </span>
                   </div>
                   {cv && (
                     <div className={classes.photo_cont}>

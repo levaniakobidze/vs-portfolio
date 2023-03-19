@@ -45,7 +45,7 @@
 .sub_section {
   display: flex;
   align-items: center;
-  height: 50px;
+  height: 30px;
   cursor: pointer;
 }
 .folder {
@@ -115,20 +115,28 @@
 
 .skills_cont {
   width: 90%;
-  height: 50px;
-  background-color: #1e2d3d;
   cursor: pointer;
   border-radius: 20px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
-  box-shadow: 0 0 10000px 1px #011627 inset;
   transition: all 0.5s;
+  padding-left: 20px;
+  height: 30px;
 }
-.skills_cont:hover {
+.skills_cont:hover p {
+  color: #7a92aa;
+}
+.skills_cont p {
+  color: #607b96;
+  font-size: 14px;
+  margin-left: 10px;
+}
+.skills_cont img {
+  padding: 4px;
+}
+/* .skills_cont:hover {
   box-shadow: 0 0 100px 1px #011627 inset;
-}
+} */
 .skills_cont img {
   width: 23px;
   height: 23px;

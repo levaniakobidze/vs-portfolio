@@ -7,8 +7,8 @@ import AboutText from "../components/AboutComponents/AboutText/AboutText";
 export const AboutContext = createContext();
 
 const ContextProvider = (props) => {
-  const [info, setInfo] = useState(false);
-  const [contact, setContact] = useState(false);
+  const [info, setInfo] = useState(true);
+  const [contact, setContact] = useState(true);
   const [skills, setSkills] = useState(false);
   const [education, setEducation] = useState(false);
   const [photo, setPhoto] = useState(false);
