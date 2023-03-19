@@ -10,6 +10,8 @@ function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [showModal, setShowModal] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   /// GET CURRENT DATE
   const date = new Date();
@@ -32,6 +34,7 @@ function Contact() {
   const onSubmit = (e) => {
     e.preventDefault();
     console.log(e.target);
+    setLoading(true);
     emailjs
       .sendForm(
         "service_apoou2n",
@@ -42,9 +45,12 @@ function Contact() {
       .then(
         function (response) {
           console.log("SUCCESS!", response.status, response.text);
+          setShowModal(true);
+          setLoading(false);
         },
         function (error) {
           console.log("FAILED...", error);
+          setLoading(false);
         }
       );
   };
@@ -65,61 +71,77 @@ function Contact() {
             </p>
           </div>
           <div className={classes.contact_cont}>
-            <form className={classes.form} onSubmit={onSubmit}>
-              <div className={classes.inputs_cont}>
-                <div
-                  className={classes.input_cont}
-                  data-aos="fade-up"
-                  data-aos-duration="500">
-                  <label htmlFor="name">-name:</label>
-                  <input
-                    name="name"
-                    id="name"
-                    type="text"
-                    className={classes.name_input}
-                    required
-                    value={name}
-                    onChange={nameChangeHandler}
-                  />
+            {!showModal ? (
+              <form className={classes.form} onSubmit={onSubmit}>
+                <div className={classes.inputs_cont}>
+                  <div
+                    className={classes.input_cont}
+                    data-aos="fade-up"
+                    data-aos-duration="500">
+                    <label htmlFor="name">-name:</label>
+                    <input
+                      name="name"
+                      id="name"
+                      type="text"
+                      className={classes.name_input}
+                      required
+                      value={name}
+                      onChange={nameChangeHandler}
+                    />
+                  </div>
+                  <div
+                    className={classes.input_cont}
+                    data-aos="fade-up"
+                    data-aos-duration="800">
+                    <label htmlFor="email">_email:</label>
+                    <input
+                      name="email"
+                      id="email"
+                      type="email"
+                      className={classes.name_input}
+                      required
+                      value={email}
+                      onChange={emailChangeHandler}
+                    />
+                  </div>
+                  <div
+                    className={classes.input_cont}
+                    data-aos="fade-up"
+                    data-aos-duration="1000">
+                    <label htmlFor="message">_message:</label>
+                    <textarea
+                      name="message"
+                      id="message"
+                      cols="30"
+                      rows="10"
+                      value={message}
+                      required
+                      onChange={messageChangeHandler}></textarea>
+                  </div>
+                  <div
+                    className={classes.submit_button_cont}
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-offset="10">
+                    <button disabled={loading}>
+                      submit-message
+                      {loading && <div class={classes.load}></div>}
+                    </button>
+                  </div>
                 </div>
-                <div
-                  className={classes.input_cont}
-                  data-aos="fade-up"
-                  data-aos-duration="800">
-                  <label htmlFor="email">_email:</label>
-                  <input
-                    name="email"
-                    id="email"
-                    type="email"
-                    className={classes.name_input}
-                    required
-                    value={email}
-                    onChange={emailChangeHandler}
-                  />
-                </div>
-                <div
-                  className={classes.input_cont}
-                  data-aos="fade-up"
-                  data-aos-duration="1000">
-                  <label htmlFor="message">_message:</label>
-                  <textarea
-                    name="message"
-                    id="message"
-                    cols="30"
-                    rows="10"
-                    value={message}
-                    required
-                    onChange={messageChangeHandler}></textarea>
-                </div>
-                <div
-                  className={classes.submit_button_cont}
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-offset="10">
-                  <button>submit-message</button>
-                </div>
+              </form>
+            ) : (
+              <div className={classes.thank_you}>
+                <p className={classes.thank_you_title}>Thank you! 🤘</p>
+                <p className={classes.thank_you_text}>
+                  Your message has been accepted. You will recieve answer really
+                  soon!
+                </p>
+                <button onClick={() => setShowModal(false)}>
+                  send-new-message
+                </button>
               </div>
-            </form>
+            )}
             <div
               className={classes.design}
               data-aos="fade-up"
