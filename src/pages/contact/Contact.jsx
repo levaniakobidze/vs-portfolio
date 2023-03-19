@@ -47,6 +47,9 @@ function Contact() {
           console.log("SUCCESS!", response.status, response.text);
           setShowModal(true);
           setLoading(false);
+          setName("");
+          setEmail("");
+          setMessage("");
         },
         function (error) {
           console.log("FAILED...", error);
