@@ -172,8 +172,8 @@
   }
   .comment::after {
     content: "";
-    width: 230px;
-    height: 230px;
+    width: 130px;
+    height: 130px;
     background-color: #4d5bce;
     opacity: 0.4;
     filter: blur(87px);
@@ -191,5 +191,14 @@
     background-color: #43d9ad;
     opacity: 0.4;
     filter: blur(87px);
+  }
+}
+
+@media all and (max-width: 444px) {
+  .name {
+    font-size: 45px;
+  }
+  .value {
+    font-size: 13px;
   }
 }

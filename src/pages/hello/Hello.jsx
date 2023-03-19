@@ -16,16 +16,14 @@ function Hello() {
             <p className={classes.profession}>{">"} Front-end developer</p>
           </div>
           <div className={classes.below_text}>
-            <p className={classes.comment}>
-              {'// find my profile on Github:'}
-            </p>
+            <p className={classes.comment}>{"// find my profile on Github:"}</p>
             <span className={classes.github_link_cont}>
               <span className={classes.const}>const </span>
               <span className={classes.variable}>githubLink</span>
               <span className={classes.equal}> = </span>
               <a
                 className={classes.value}
-                href='https://github.com/levaniakobidze'>
+                href="https://github.com/levaniakobidze">
                 {" "}
                 "https://github.com/levaniakobidze"
               </a>
@@ -34,37 +32,37 @@ function Hello() {
         </div>
         <div className={classes.right}>
           <img
-            data-aos='fade-up'
-            data-aos-duration='500'
+            data-aos="fade-up"
+            data-aos-duration="500"
             className={classes.blur}
             src={code}
-            alt='code'
+            alt="code"
           />
           <img
-            data-aos='fade-up'
-            data-aos-duration='800'
+            data-aos="fade-up"
+            data-aos-duration="800"
             className={classes.middle}
             src={code}
-            alt='code'
+            alt="code"
           />
           <img
-            data-aos='fade-up'
-            data-aos-duration='1000'
+            data-aos="fade-up"
+            data-aos-duration="1000"
             className={classes.blur}
             src={code}
-            alt='code'
+            alt="code"
           />
           <img
-            data-aos='fade-up'
+            data-aos="fade-up"
             className={classes.green_light}
             src={green_light}
-            alt='light'
+            alt="light"
           />
           <img
-            data-aos='fade-up'
+            data-aos="fade-up"
             className={classes.blue_light}
             src={blue_light}
-            alt='light'
+            alt="light"
           />
         </div>
       </Container>
