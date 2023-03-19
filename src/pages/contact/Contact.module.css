@@ -286,7 +286,8 @@
     width: 100%;
     display: none;
   }
-  .form {
+  .form,
+  .thank_you {
     width: 100%;
     border-right: 0;
     padding-top: 0;
