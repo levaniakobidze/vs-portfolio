@@ -3,12 +3,12 @@ import Container from "../../components/Container/Container";
 import LeftSideBarCont from "../../components/LeftSideBarCont/LeftSideBarCont";
 import classes from "./Projects.module.css";
 import x from "../../assets/x.svg";
-import { AppContext } from "../../state/appContext";
 import Project from "../../components/Project/Project";
 import ToolsFilter from "../../components/Filters/ToolsFilter/ToolsFilter";
+import { ProjectsContext } from "../../state/projectsContext";
 
 function Projects() {
-  const { projects } = useContext(AppContext);
+  const { projects } = useContext(ProjectsContext);
   return (
     <section className={classes.projects}>
       <Container className={classes.projects_container}>

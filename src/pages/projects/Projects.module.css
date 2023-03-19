@@ -1,6 +1,7 @@
 .projects {
   width: 100%;
   background-color: #011627;
+  min-height: 100vh;
 }
 .projects_container {
   display: flex;
@@ -42,6 +43,7 @@
   padding: 50px;
   /* padding-bottom: 100px; */
   width: 100%;
+  min-height: 100vh;
 }
 .projects_list::-webkit-scrollbar {
   display: none;
