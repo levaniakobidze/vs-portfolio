@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./AboutText.module.css";
-import profileImg from "../../../assets/profile.png";
+import profileImg from "../../../assets/levaniakobidze.png";
 import github from "../../../assets/github.png";
 
 function AboutText() {

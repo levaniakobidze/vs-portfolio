@@ -1,43 +1,45 @@
-.about_text{
-    padding: 20px;
+.about_text {
+  padding: 20px;
 }
-.text_cont{
-    display: flex;
-    flex-direction: column;
+.text_cont {
+  display: flex;
+  flex-direction: column;
 }
-.text_cont{
- display: flex;
-font-family: 'Fira Code';
-font-style: normal;
-font-weight: 450;
-font-size: 18px;
-line-height: 150%;
-/* or 27px */
-color: #607B96;
+.text_cont {
+  display: flex;
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 450;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+  color: #607b96;
 }
 
 .text_cont img {
-    width: 110px;
-    height: 110px;
-    float: right;    
-    margin: 0px 0px 7px 15px;
-    border-radius: 5px;
-    box-shadow: 2px 0 10px 1px rgb(0, 0, 0);
-    cursor: pointer;
+  width: 110px;
+  height: 110px;
+  float: right;
+  margin: 0px 0px 7px 15px;
+  border-radius: 5px;
+  box-shadow: 2px 0 10px 1px #010e1a;
+  border-radius: 10px;
+  padding-top: 5px;
+  cursor: pointer;
 }
-.number{
-    display: flex;
-    text-align: right;
-    justify-content: right;
-    width: 20px;
+.number {
+  display: flex;
+  text-align: right;
+  justify-content: right;
+  width: 20px;
 }
-.comment{
-    margin: 15px 0px;
+.comment {
+  margin: 15px 0px;
 }
-.code_snippet{
-    width: 100%;
+.code_snippet {
+  width: 100%;
 }
 .code_snippet img {
-    width: 100%;
-    border-radius: 20px;
+  width: 100%;
+  border-radius: 20px;
 }
