@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import Cv from "../components/AboutComponents/Cv/Cv";
 import Picture from "../components/AboutComponents/Picture/Picture";
 import Skills from "../components/AboutComponents/Skills/Skills";
@@ -25,6 +25,12 @@ const ContextProvider = (props) => {
   // ////////////////////////////////
   const [navData, setNavData] = useState([]);
   const [activeComponent, setActiveComponent] = useState("text");
+  useEffect(() => {
+    if (window.innerWidth < 1023) {
+      setContact(false);
+      setInfo(false);
+    }
+  }, []);
   /// Render About components
   const renderComponent = () => {
     switch (activeComponent) {
