@@ -15,6 +15,8 @@
 .top_bar {
   width: 100%;
   height: 50px;
+  display: flex;
+  align-items: center;
   border-bottom: 1px solid #1e2d3d;
 }
 .top_bar_contact {
@@ -48,13 +50,34 @@
 .projects_list::-webkit-scrollbar {
   display: none;
 }
+.top_bar_filter_stack {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(21, 114, 91);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5px;
+  border-radius: 50%;
+}
+.top_bar_filter_stack {
+  color: #fff;
+  margin-left: 20px;
+}
+.empty {
+  color: #607b96;
+}
 
 @media all and (max-width: 768px) {
   .projects_container {
     flex-direction: column;
   }
+  .top_bar_filter_stack {
+    display: none;
+  }
   .top_bar_contact {
     width: 100%;
+    border-right: 0;
   }
   .left {
     width: 100%;

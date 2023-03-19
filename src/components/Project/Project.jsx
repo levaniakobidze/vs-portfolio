@@ -6,10 +6,7 @@ function Projects({ image, indx, title, live, github }) {
     <div className={classes.project}>
       <div className={classes.num_and_title}>
         <p className={classes.project_num}>Project {indx + 1}</p>
-        <p className={classes.project_title}>
-          {" "}
-          {"//"} _{title.substr(0, 15)}
-        </p>
+        <p className={classes.project_title}>_{title.substr(0, 15)}</p>
       </div>
       <div className={classes.image_and_description}>
         <div className={classes.project_image_cont}>

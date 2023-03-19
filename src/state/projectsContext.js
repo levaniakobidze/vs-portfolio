@@ -38,11 +38,23 @@ const filters = [
   },
 ];
 
+const colors = [
+  "#27855a",
+  "rgb(148, 39, 39)",
+  "rgb(87, 87, 18)",
+  "rgb(114, 66, 21)",
+  "rgb(114, 21, 52)",
+  "rgb(72, 21, 114)",
+  "rgb(21, 92, 114)",
+  "rgb(21, 23, 114)",
+  "rgb(21, 114, 91)",
+];
+
 export const ProjectsContext = createContext();
 
 const ContextProvider = (props) => {
   const PROJECTS_URL = "https://portfolio-projects.onrender.com/projects";
-  const [showToolsFilter, setShowToolsFilter] = useState(false);
+  const [showToolsFilter, setShowToolsFilter] = useState(true);
   const [projects, setProjects] = useState(dummyData);
   const [initialProjects, setInitialProjects] = useState(dummyData);
   const [selectedStack, setSelectedStack] = useState([]);
@@ -67,6 +79,11 @@ const ContextProvider = (props) => {
     setInitialProjects(dummyData);
   }, [data]);
 
+  useEffect(() => {
+    if (window.innerWidth < 1023) {
+      setShowToolsFilter(false);
+    }
+  }, []);
   return (
     <ProjectsContext.Provider
       value={{
@@ -78,6 +95,7 @@ const ContextProvider = (props) => {
         filters,
         initialProjects,
         setProjects,
+        colors,
       }}>
       {props.children}
     </ProjectsContext.Provider>

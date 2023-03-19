@@ -40,6 +40,7 @@
   margin-left: 25px;
   margin-right: 11px;
   fill: #607b96;
+  cursor: pointer;
 }
 .filter_input {
   display: none !important;
@@ -50,6 +51,11 @@
   border: 1px solid #607b96;
   cursor: pointer;
   border-radius: 2px;
+  cursor: pointer;
+}
+.second_label {
+  cursor: pointer;
+  display: contents;
 }
 .filter_input:checked + label {
   background-color: #607b96;

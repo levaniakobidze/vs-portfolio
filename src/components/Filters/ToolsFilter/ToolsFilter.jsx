@@ -53,8 +53,12 @@ function ToolsFilter() {
                 <label
                   className={classes.filter_label}
                   htmlFor={filter.htmlFor}></label>
-                <img src={filter.img} alt={filter.alt} />
-                <span>{filter.text}</span>
+                <label
+                  className={classes.second_label}
+                  htmlFor={filter.htmlFor}>
+                  <img src={filter.img} alt={filter.alt} />
+                  <span>{filter.text}</span>
+                </label>
               </div>
             );
           })}
