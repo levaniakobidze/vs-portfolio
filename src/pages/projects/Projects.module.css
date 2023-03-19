@@ -2,6 +2,7 @@
   width: 100%;
   background-color: #011627;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 .projects_container {
   display: flex;
