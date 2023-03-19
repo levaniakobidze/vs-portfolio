@@ -196,7 +196,8 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
+  padding-top: 100px;
   align-items: center;
   border-right: 1px solid #1c2b3a;
 }
@@ -204,7 +205,7 @@
   text-align: center;
 }
 .thank_you_text {
-  margin: 20px 0;
+  margin: 40px 0;
   font-family: "Fira Code";
   font-style: normal;
   font-weight: 450;
@@ -212,6 +213,7 @@
   line-height: 24px;
   text-align: center;
   color: #607b96;
+  max-width: 550px;
 }
 .thank_you_title {
   font-family: "Fira Code";
@@ -292,6 +294,9 @@
     border-right: 0;
     padding-top: 0;
     margin-top: 40px;
+  }
+  .thank_you {
+    padding-top: 200px;
   }
   .inputs_cont {
     width: 100%;
