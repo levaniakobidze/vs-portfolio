@@ -2,11 +2,18 @@ import React from "react";
 import Container from "../../components/Container/Container";
 import classes from "./Contact.module.css";
 import x from "../../assets/x.svg";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import LeftSideBarCont from "../../components/LeftSideBarCont/LeftSideBarCont";
 import emailjs from "emailjs-com";
+import { ContactContext } from "../../state/contactContext";
+import light_arrow from "../../assets/light_arrow.svg";
+import emailIcon from "../../assets/email.svg";
+import phoneIcon from "../../assets/phone-icon.svg";
+import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
 function Contact() {
+  const { contact, setContact, socials, setSocials } =
+    useContext(ContactContext);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -61,11 +68,65 @@ function Contact() {
     <section className={classes.contact}>
       <Container className={classes.contact_container}>
         <div className={classes.left}>
-          <LeftSideBarCont />
+          <LeftSideBarCont>
+            <div className={classes.left_wrapper}>
+              <div
+                onClick={() => setContact((prev) => !prev)}
+                className={
+                  contact
+                    ? `${classes.section} ${classes.active_section}`
+                    : classes.section
+                }>
+                <img src={light_arrow} alt="arrow" />
+                <span>contact</span>
+              </div>
+              {contact && (
+                <div className={classes.cotact_list}>
+                  <div className={classes.email_contact}>
+                    <img src={emailIcon} alt="email" />
+                    <p>levaniakobidze25@gmail.com</p>
+                  </div>
+                  <div className={classes.phone_contact}>
+                    <img src={phoneIcon} alt="phone" />
+                    <p>+995-598-13-23-16</p>
+                  </div>
+                </div>
+              )}
+              <div
+                onClick={() => setSocials((prev) => !prev)}
+                className={
+                  contact
+                    ? `${classes.section} ${classes.active_section}`
+                    : classes.section
+                }>
+                <img src={light_arrow} alt="arrow" />
+                <span>find_me_in</span>
+              </div>
+              {socials && (
+                <div className={classes.cotact_list}>
+                  <a
+                    href="https://github.com/levaniakobidze"
+                    target={"_blank"}
+                    rel="noreferrer"
+                    className={classes.email_contact}>
+                    <AiFillGithub className={classes.github_icon} />
+                    <p>Github</p>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/levan-iakobidze-b0b60923b/"
+                    target={"_blank"}
+                    rel="noreferrer"
+                    className={classes.phone_contact}>
+                    <AiFillLinkedin className={classes.github_icon} />
+                    <p>Linkedin</p>
+                  </a>
+                </div>
+              )}
+            </div>
+          </LeftSideBarCont>
         </div>
         <div className={classes.right}>
           <div className={classes.top_bar}>
-            {" "}
             <p
               className={classes.top_bar_contact}
               data-aos="fade-left"

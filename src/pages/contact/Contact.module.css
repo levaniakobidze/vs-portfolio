@@ -243,6 +243,85 @@
 .thank_you button:hover {
   background-color: #fea55f;
 }
+.section {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #1e2d3d;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3;
+}
+.section img {
+  transform: rotate(-90deg);
+  transition: all 0.3;
+}
+.section span {
+  margin-left: 15px;
+  color: aliceblue;
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+.active_section img {
+  transform: rotate(0);
+  transition: all 0.3;
+}
+.sub_section_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.sub_section {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  cursor: pointer;
+}
+.contact_list {
+  display: flex;
+}
+.email_contact,
+.phone_contact {
+  display: flex;
+  padding: 10px 0;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.email_contact p,
+.phone_contact p {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  /* identical to box height */
+  color: #607b96;
+  margin-left: 8px;
+}
+.github_icon {
+  width: 20.38px !important;
+  font-size: 25px !important;
+  color: #607b96 !important;
+}
+.left_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 1022px) {
+  .contact_container {
+    flex-direction: column;
+  }
+  .top_bar {
+    display: none;
+  }
+  .left_wrapper {
+    width: 100%;
+  }
+}
 @keyframes rotate {
   from {
     transform: rotate(0deg);

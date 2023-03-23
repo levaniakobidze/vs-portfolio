@@ -13,6 +13,8 @@ const ContextProvider = (props) => {
   const [education, setEducation] = useState(false);
   const [photo, setPhoto] = useState(false);
   const [cv, setCv] = useState(false);
+  const [linkedin, setLinkedin] = useState(false);
+  const [github, setGithub] = useState(false);
   const [activeSection, setActiveSection] = useState([
     { id: 1, name: "text", active: false },
     { id: 2, name: "contact", active: false },
@@ -81,6 +83,12 @@ const ContextProvider = (props) => {
       case "cv":
         setCv((prev) => !prev);
         break;
+      case "linkedin":
+        setLinkedin((prev) => !prev);
+        break;
+      case "github":
+        setGithub((prev) => !prev);
+        break;
       default:
         return null;
     }
@@ -94,6 +102,8 @@ const ContextProvider = (props) => {
         education,
         photo,
         cv,
+        linkedin,
+        github,
         setActiveComponent,
         makeSectionActive,
         renderComponent,

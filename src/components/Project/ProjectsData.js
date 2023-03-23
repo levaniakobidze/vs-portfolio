@@ -6,7 +6,7 @@ export const dummyData = [
     live: "https://shopping-cart-levan.vercel.app",
     title: "Shopping cart",
     github: "https://github.com/levaniakobidze/Shopping-cart",
-    stack: ["react", "typescript", "node"],
+    stack: ["react", "redux"],
   },
   {
     id: 18,
@@ -16,7 +16,7 @@ export const dummyData = [
     title: "Intertainment app",
     github: "https://github.com/levaniakobidze/entertainment-web-app",
 
-    stack: ["react", "typescript", "node"],
+    stack: ["react", "context api"],
   },
   {
     id: 6,
@@ -25,7 +25,7 @@ export const dummyData = [
     live: "https://clonetube1.netlify.app/",
     title: "YouTube clone",
     github: "https://github.com/levaniakobidze/Youtube-Clone",
-    stack: ["react", "typescript", "node"],
+    stack: ["react"],
   },
   {
     id: 908,
@@ -34,7 +34,7 @@ export const dummyData = [
     live: "https://news-api-levan.vercel.app/",
     title: "El News (api, typescript)",
     github: "https://github.com/levaniakobidze/news-api",
-    stack: ["react", "typescript", "node"],
+    stack: ["react", "typescript"],
   },
   {
     id: 8,
@@ -43,7 +43,7 @@ export const dummyData = [
     live: "https://quiz-api-levaniakobidze.vercel.app/ ",
     title: "Quiz ( api )",
     github: "https://github.com/levaniakobidze/Quiz_api",
-    stack: ["react", "typescript", "node"],
+    stack: ["react"],
   },
   {
     id: 5,
@@ -52,7 +52,7 @@ export const dummyData = [
     live: "https://react-todo-app-levan.vercel.app/",
     title: "Todo-App",
     github: "https://github.com/levaniakobidze/React-Todo-app",
-    stack: ["react", "typescript", "node"],
+    stack: ["react"],
   },
   {
     id: 9,
@@ -61,7 +61,7 @@ export const dummyData = [
     live: "https://country123.netlify.app//",
     title: "Search country ( api )",
     github: "https://github.com/levaniakobidze/Country-search-API",
-    stack: ["react", "typescript", "node"],
+    stack: ["react"],
   },
   {
     id: 77,
@@ -70,7 +70,7 @@ export const dummyData = [
     live: "https://github-typehead-api.vercel.app/",
     title: "Github Typehead API",
     github: "https://github.com/levaniakobidze/Github-Typehead-api",
-    stack: ["react", "typescript", "node"],
+    stack: ["react"],
   },
 
   {
@@ -80,7 +80,7 @@ export const dummyData = [
     live: "https://resturant123iakobidze.netlify.app/#categories",
     title: "Resturant page",
     github: "https://github.com/levaniakobidze/resturant-landing-page",
-    stack: ["react", "typescript", "node"],
+    stack: ["react"],
   },
   ////////////////////////
   {
@@ -90,7 +90,7 @@ export const dummyData = [
     live: "https://ltrafalgar.netlify.app/",
     title: "Landing page",
     github: "https://github.com/levaniakobidze/trafalgar-landing-page",
-    stack: ["react", "typescript", "node"],
+    stack: ["react"],
   },
   {
     id: 2,
@@ -99,7 +99,7 @@ export const dummyData = [
     live: "https://githubsearch12.netlify.app/",
     title: "Users search",
     github: "https://github.com/levaniakobidze/Github-Users",
-    stack: ["vue", "typescript", "node"],
+    stack: ["react"],
   },
   {
     id: 517,
@@ -108,7 +108,7 @@ export const dummyData = [
     live: "https://products-filter-js-theta.vercel.app/",
     title: "Product Filter (JS)",
     github: "https://github.com/levaniakobidze/Products-filter",
-    stack: ["react", "node"],
+    stack: ["js"],
   },
 
   {
@@ -118,25 +118,7 @@ export const dummyData = [
     live: "https://travel-page1.netlify.app/",
     title: "Travel page",
     github: "https://github.com/levaniakobidze/Travel-page",
-    stack: ["react", "typescript", "node"],
-  },
-  {
-    id: 90,
-    image:
-      "https://res.cloudinary.com/diyky5uya/image/upload/v1656315158/checkout_ncnj8h.png",
-    live: "https://checkout-page-livid.vercel.app/",
-    title: "Chekout Page",
-    github: "https://github.com/levaniakobidze/Checkout-page",
-    stack: ["typescript"],
-  },
-  {
-    id: 4,
-    image:
-      "https://res.cloudinary.com/diyky5uya/image/upload/v1650570209/quotes_wqtojq.png",
-    live: "https://quotes-generator12.netlify.app/",
-    title: "Quotes generator",
-    github: "https://github.com/levaniakobidze/React-Random-Quotes",
-    stack: ["react", "typescript", "node"],
+    stack: ["react"],
   },
   {
     id: 3,
@@ -145,7 +127,7 @@ export const dummyData = [
     live: "https://landingpage1223.netlify.app/",
     title: "Landing page",
     github: "https://github.com/levaniakobidze/Landing-page",
-    stack: ["react", "typescript", "node"],
+    stack: ["react"],
   },
   {
     id: 88,
@@ -155,78 +137,5 @@ export const dummyData = [
     title: "Landing page (API)",
     github: "https://github.com/levaniakobidze/tech-test-landing-page-api",
     stack: ["react", "typescript", "node"],
-  },
-  {
-    id: 7,
-    image:
-      "https://res.cloudinary.com/diyky5uya/image/upload/v1651425412/traff11_niyc3h.png",
-    live: "https://ltrafalgar.netlify.app/",
-    title: "Landing page",
-    github: "https://github.com/levaniakobidze/trafalgar-landing-page",
-    stack: ["react", "typescript", "node"],
-  },
-  {
-    id: 2,
-    image:
-      "https://res.cloudinary.com/diyky5uya/image/upload/v1649954893/users_q4ebfs.png",
-    live: "https://githubsearch12.netlify.app/",
-    title: "Users search",
-    github: "https://github.com/levaniakobidze/Github-Users",
-    stack: ["react", "typescript", "node"],
-  },
-  {
-    id: 517,
-    image:
-      "https://res.cloudinary.com/diyky5uya/image/upload/v1660495945/filters_buan9x.png",
-    live: "https://products-filter-js-theta.vercel.app/",
-    title: "Product Filter (JS)",
-    github: "https://github.com/levaniakobidze/Products-filter",
-    stack: ["react", "typescript", "node"],
-  },
-
-  {
-    id: 1,
-    image:
-      "https://res.cloudinary.com/diyky5uya/image/upload/v1649954772/landing_v1fmpo.png",
-    live: "https://travel-page1.netlify.app/",
-    title: "Travel page",
-    github: "https://github.com/levaniakobidze/Travel-page",
-    stack: ["vue"],
-  },
-  {
-    id: 90,
-    image:
-      "https://res.cloudinary.com/diyky5uya/image/upload/v1656315158/checkout_ncnj8h.png",
-    live: "https://checkout-page-livid.vercel.app/",
-    title: "Chekout Page",
-    github: "https://github.com/levaniakobidze/Checkout-page",
-    stack: ["react", "typescript", "node"],
-  },
-  {
-    id: 4,
-    image:
-      "https://res.cloudinary.com/diyky5uya/image/upload/v1650570209/quotes_wqtojq.png",
-    live: "https://quotes-generator12.netlify.app/",
-    title: "Quotes generator",
-    github: "https://github.com/levaniakobidze/React-Random-Quotes",
-    stack: ["react", "typescript", "node"],
-  },
-  {
-    id: 3,
-    image:
-      "https://res.cloudinary.com/diyky5uya/image/upload/v1650569021/landing-page_fcq4fi.png",
-    live: "https://landingpage1223.netlify.app/",
-    title: "Landing page",
-    github: "https://github.com/levaniakobidze/Landing-page",
-    stack: ["react", "typescript", "node"],
-  },
-  {
-    id: 88,
-    image:
-      "https://res.cloudinary.com/diyky5uya/image/upload/v1657298802/landing1_rkgteo.png",
-    live: "https://test-project12.vercel.app/",
-    title: "Landing page (API)",
-    github: "https://github.com/levaniakobidze/tech-test-landing-page-api",
-    stack: ["vue", "typescript"],
   },
 ];

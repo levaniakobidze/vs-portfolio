@@ -1,172 +1,166 @@
 .skills {
-    width: 100%;
-    padding: 20px;
+  width: 100%;
+  padding: 20px;
 }
-.skills_list{
-    display: flex;
-    flex-wrap:wrap;
-    gap: 10px;
-    justify-content: center;
+.skills_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
 }
-.skill{
-    width: 90px;
-    height: 80px;
-    background-color: #1E2D3D;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+.skill {
+  width: 90px;
+  height: 80px;
+  background-color: #1e2d3d;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
-.skill_icon{
-    color: #607B96;
-    font-size: 30px;
+.skill_icon {
+  color: #607b96;
+  font-size: 30px;
 }
-.mongoose{
-    color: #607B96;
-    font-size: 14px;
+.mongoose {
+  color: #607b96;
+  font-size: 14px;
 }
-.skill_name{
-    font-size: 12px;
-    margin-top: 5px;
-    color: #607B96;
-}
-
-.skill{
-    transition: all 0.3s;
-}
-.skill:hover{
-background-color: #011221;
-}
-.skill:hover > .html{
-    color: orangered;
-}
-.skill:hover > .css{
-    color: blue;
-}
-.skill:hover > .sass{
-    color: palevioletred;
-}
-.skill:hover > .bootstrap{
-    color: purple;
-}
-.skill:hover > .js{
-    color: yellow;
-}
-.skill:hover > .react{
-    color: cyan;
-}
-.skill:hover > .router{
-    color: red;
-}
-.skill:hover > .redux{
-    color: purple;
-}
-.skill:hover > .vue{
-    color: rgb(0, 170, 99);
-}
-.skill:hover > .git{
-    color: orangered;
-}
-.skill:hover > .figma{
-    color: purple;
-}
-.skill:hover > .xd{
-    color: palevioletred;
-}
-.skill:hover > .node{
-    color: rgb(0, 255, 0);
-}
-.skill:hover > .express{
-    color: #fff;
-}
-.skill:hover > .mongodb{
-    color: rgb(0, 172, 0);
-}
-.skill:hover > .mongoose{
-    color: orangered;
+.skill_name {
+  font-size: 12px;
+  margin-top: 5px;
+  color: #607b96;
 }
 
+.skill {
+  transition: all 0.3s;
+}
+.skill:hover {
+  background-color: #011221;
+}
+.skill:hover > .html {
+  color: orangered;
+}
+.skill:hover > .css {
+  color: blue;
+}
+.skill:hover > .sass {
+  color: palevioletred;
+}
+.skill:hover > .bootstrap {
+  color: purple;
+}
+.skill:hover > .js {
+  color: yellow;
+}
+.skill:hover > .react {
+  color: cyan;
+}
+.skill:hover > .router {
+  color: blue;
+}
+.skill:hover > .redux {
+  color: purple;
+}
+.skill:hover > .vue {
+  color: rgb(0, 170, 99);
+}
+.skill:hover > .git {
+  color: orangered;
+}
+.skill:hover > .figma {
+  color: purple;
+}
+.skill:hover > .xd {
+  color: palevioletred;
+}
+.skill:hover > .node {
+  color: rgb(0, 255, 0);
+}
+.skill:hover > .express {
+  color: #fff;
+}
+.skill:hover > .mongodb {
+  color: rgb(0, 172, 0);
+}
+.skill:hover > .mongoose {
+  color: orangered;
+}
 
 /* //// */
 
+.def_html {
+  color: orangered;
+}
+.def_css {
+  color: blue;
+}
+.def_sass {
+  color: palevioletred;
+}
+.def_bootstrap {
+  color: purple;
+}
+.def_js {
+  color: yellow;
+}
+.def_react {
+  color: cyan;
+}
+.def_router {
+  color: blue;
+}
+.def_redux {
+  color: purple;
+}
+.def_vue {
+  color: rgb(0, 170, 99);
+}
+.def_git {
+  color: orangered;
+}
+.def_figma {
+  color: purple;
+}
+.def_xd {
+  color: palevioletred;
+}
+.def_node {
+  color: rgb(0, 255, 0);
+}
+.def_express {
+  color: #fff;
+}
+.def_mongodb {
+  color: rgb(0, 172, 0);
+}
+.def_mongoose {
+  color: orangered;
+}
 
-.def_html{
-    color: orangered;
-}
-.def_css{
-    color: blue;
-}
-.def_sass{
-    color: palevioletred;
-}
-.def_bootstrap{
-    color: purple;
-}
-.def_js{
-    color: yellow;
-}
-.def_react{
-    color: cyan;
-}
-.def_router{
-    color: red;
-}
-.def_redux{
-    color: purple;
-}
-.def_vue{
-    color: rgb(0, 170, 99);
-}
-.def_git{
-    color: orangered;
-}
-.def_figma{
-    color: purple;
-}
-.def_xd{
-    color: palevioletred;
-}
-.def_node{
-    color: rgb(0, 255, 0);
-}
-.def_express{
-    color: #fff;
-}
-.def_mongodb{
-    color: rgb(0, 172, 0);
-}
-.def_mongoose{
-    color: orangered;
-}
-
-
-
-.description_header{
-    display: flex;
-    justify-content: space-between;  
-    margin-top: 20px;
-    animation: slide 1s forwards;
-    padding:  0 10px;
+.description_header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  animation: slide 1s forwards;
+  padding: 0 10px;
 }
 .description_header p {
-    font-size: 20px;
-    color: #fff;
+  font-size: 20px;
+  color: #fff;
 }
-.description_icon{
-    font-size: 35px;
+.description_icon {
+  font-size: 35px;
 }
-.skill_description_wrapper{
-    animation: slide 1s forwards;
+.skill_description_wrapper {
+  animation: slide 1s forwards;
 }
-.description_text{
-    width: 100%;
-    margin-top:10px;
+.description_text {
+  width: 100%;
+  margin-top: 10px;
 }
 .description_text p {
-    text-align: center;
-    color: rgb(156, 156, 156);
+  text-align: center;
+  color: rgb(156, 156, 156);
 }
-
-

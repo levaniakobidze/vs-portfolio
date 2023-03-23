@@ -2,7 +2,10 @@ import { createContext, useState, useEffect } from "react";
 import { dummyData } from "../components/Project/ProjectsData";
 import useFetchData from "../hooks/useFetchData";
 import react from "../assets/react.svg";
-
+import vue from "../assets/vue.svg";
+import typescript from "../assets/typescript.svg";
+import nodejs from "../assets/nodejs.svg";
+import redux from "../assets/redux.svg";
 const filters = [
   {
     id: "react",
@@ -13,11 +16,19 @@ const filters = [
     text: "React",
   },
   {
+    id: "redux",
+    name: "redux",
+    htmlFor: "redux",
+    alt: "redux",
+    img: redux,
+    text: "Redux",
+  },
+  {
     id: "vue",
     name: "vue",
     htmlFor: "vue",
     alt: "vue",
-    img: react,
+    img: vue,
     text: "Vue",
   },
   {
@@ -25,7 +36,7 @@ const filters = [
     name: "typescript",
     htmlFor: "typescript",
     alt: "typescript",
-    img: react,
+    img: typescript,
     text: "Typescript",
   },
   {
@@ -33,7 +44,7 @@ const filters = [
     name: "node",
     htmlFor: "node",
     alt: "node",
-    img: react,
+    img: nodejs,
     text: "Node.js",
   },
 ];

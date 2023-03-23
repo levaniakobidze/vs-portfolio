@@ -66,6 +66,9 @@
 .active {
   transform: rotate(-90deg);
 }
+.filter_image {
+  height: 17px;
+}
 
 @media all and (max-width: 768px) {
   .filters_list {

@@ -8,7 +8,6 @@ import pink_folder from "../../assets/pink_folder.svg";
 import blue_folder from "../../assets/green_folder.svg";
 import red_folder from "../../assets/red_folder.svg";
 import green_folder from "../../assets/blue_folder.svg";
-import profileImg from "../../assets/profile.png";
 import cvImg from "../../assets/cv.png";
 import react from "../../assets/react.svg";
 import { AboutContext } from "../../state/aboutContext";
@@ -22,6 +21,8 @@ function About() {
     education,
     photo,
     cv,
+    linkedin,
+    github,
     navData,
     setNavData,
     makeSectionActive,
@@ -160,14 +161,15 @@ function About() {
                   </div>
                   {cv && (
                     <div className={classes.photo_cont}>
-                      <img
-                        src={cvImg}
-                        alt="profile"
+                      <div
+                        className={classes.skills_cont}
                         onClick={() => {
-                          setNavData([{ id: 2, name: "cv" }]);
+                          setNavData([{ id: 3, name: "cv" }]);
                           setActiveComponent("cv");
-                        }}
-                      />
+                        }}>
+                        <img src={react} alt="react" />
+                        <p>Cv.jsx</p>
+                      </div>
                     </div>
                   )}
                 </div>
@@ -176,9 +178,9 @@ function About() {
                 <div className={classes.sub_section_wrapper}>
                   <div
                     className={classes.sub_section}
-                    onClick={() => makeSectionActive("cv")}>
+                    onClick={() => makeSectionActive("github")}>
                     <img
-                      className={cv ? classes.active_sub_section : ""}
+                      className={github ? classes.active_sub_section : ""}
                       src={dark_arrow}
                       alt="arrow"
                     />
@@ -187,20 +189,21 @@ function About() {
                       src={red_folder}
                       alt="arrow"
                     />
-                    <span className={cv ? classes.active_span : ""}>
+                    <span className={github ? classes.active_span : ""}>
                       Github
                     </span>
                   </div>
-                  {cv && (
+                  {github && (
                     <div className={classes.photo_cont}>
-                      <img
-                        src={cvImg}
-                        alt="profile"
+                      <div
+                        className={classes.skills_cont}
                         onClick={() => {
-                          setNavData([{ id: 2, name: "cv" }]);
-                          setActiveComponent("cv");
-                        }}
-                      />
+                          setNavData([{ id: 3, name: "github" }]);
+                          setActiveComponent("github");
+                        }}>
+                        <img src={react} alt="react" />
+                        <p>Github.jsx</p>
+                      </div>
                     </div>
                   )}
                 </div>
@@ -209,9 +212,9 @@ function About() {
                 <div className={classes.sub_section_wrapper}>
                   <div
                     className={classes.sub_section}
-                    onClick={() => makeSectionActive("cv")}>
+                    onClick={() => makeSectionActive("linkedin")}>
                     <img
-                      className={cv ? classes.active_sub_section : ""}
+                      className={linkedin ? classes.active_sub_section : ""}
                       src={dark_arrow}
                       alt="arrow"
                     />
@@ -220,20 +223,21 @@ function About() {
                       src={blue_folder}
                       alt="arrow"
                     />
-                    <span className={cv ? classes.active_span : ""}>
+                    <span className={linkedin ? classes.active_span : ""}>
                       LinkedIn
                     </span>
                   </div>
-                  {cv && (
+                  {linkedin && (
                     <div className={classes.photo_cont}>
-                      <img
-                        src={cvImg}
-                        alt="profile"
+                      <div
+                        className={classes.skills_cont}
                         onClick={() => {
-                          setNavData([{ id: 2, name: "cv" }]);
-                          setActiveComponent("cv");
-                        }}
-                      />
+                          setNavData([{ id: 3, name: "linkedin" }]);
+                          setActiveComponent("linkedin");
+                        }}>
+                        <img src={react} alt="react" />
+                        <p>Linkedin.jsx</p>
+                      </div>
                     </div>
                   )}
                 </div>

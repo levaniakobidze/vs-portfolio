@@ -56,7 +56,11 @@ function ToolsFilter() {
                 <label
                   className={classes.second_label}
                   htmlFor={filter.htmlFor}>
-                  <img src={filter.img} alt={filter.alt} />
+                  <img
+                    className={classes.filter_image}
+                    src={filter.img}
+                    alt={filter.alt}
+                  />
                   <span>{filter.text}</span>
                 </label>
               </div>

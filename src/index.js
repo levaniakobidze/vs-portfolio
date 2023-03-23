@@ -7,13 +7,16 @@ import AppContext from "./state/appContext";
 import AboutContext from "./state/aboutContext";
 import SkillsContext from "./state/skillsContext";
 import ProjectsContext from "./state/projectsContext";
+import ContactContext from "./state/contactContext";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const Context = (props) => (
   <AppContext>
     <AboutContext>
       <ProjectsContext>
-        <SkillsContext>{props.children}</SkillsContext>
+        <SkillsContext>
+          <ContactContext>{props.children}</ContactContext>
+        </SkillsContext>
       </ProjectsContext>
     </AboutContext>
   </AppContext>
