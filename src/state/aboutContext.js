@@ -3,6 +3,8 @@ import Cv from "../components/AboutComponents/Cv/Cv";
 import Picture from "../components/AboutComponents/Picture/Picture";
 import Skills from "../components/AboutComponents/Skills/Skills";
 import AboutText from "../components/AboutComponents/AboutText/AboutText";
+import Github from "../components/AboutComponents/Github/Github";
+import Linkedin from "../components/AboutComponents/Linkedin/Linkedin";
 
 export const AboutContext = createContext();
 
@@ -44,6 +46,10 @@ const ContextProvider = (props) => {
         return <AboutText />;
       case "photo":
         return <Picture />;
+      case "github":
+        return <Github />;
+      case "linkedin":
+        return <Linkedin />;
       default:
         break;
     }

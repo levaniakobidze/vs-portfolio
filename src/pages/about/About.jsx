@@ -121,7 +121,7 @@ function About() {
                     <div
                       className={classes.skills_cont}
                       onClick={() => {
-                        setNavData([{ id: 4, name: "photo" }]);
+                        setNavData([{ id: 12, name: "photo" }]);
                         setActiveComponent("photo");
                       }}>
                       <img src={react} alt="react" />
@@ -164,7 +164,7 @@ function About() {
                       <div
                         className={classes.skills_cont}
                         onClick={() => {
-                          setNavData([{ id: 3, name: "cv" }]);
+                          setNavData([{ id: 32, name: "cv" }]);
                           setActiveComponent("cv");
                         }}>
                         <img src={react} alt="react" />
@@ -198,7 +198,7 @@ function About() {
                       <div
                         className={classes.skills_cont}
                         onClick={() => {
-                          setNavData([{ id: 3, name: "github" }]);
+                          setNavData([{ id: 24, name: "github" }]);
                           setActiveComponent("github");
                         }}>
                         <img src={react} alt="react" />
