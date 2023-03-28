@@ -208,40 +208,6 @@ function About() {
                   )}
                 </div>
               )}
-              {contact && (
-                <div className={classes.sub_section_wrapper}>
-                  <div
-                    className={classes.sub_section}
-                    onClick={() => makeSectionActive("linkedin")}>
-                    <img
-                      className={linkedin ? classes.active_sub_section : ""}
-                      src={dark_arrow}
-                      alt="arrow"
-                    />
-                    <img
-                      className={classes.folder}
-                      src={blue_folder}
-                      alt="arrow"
-                    />
-                    <span className={linkedin ? classes.active_span : ""}>
-                      LinkedIn
-                    </span>
-                  </div>
-                  {linkedin && (
-                    <div className={classes.photo_cont}>
-                      <div
-                        className={classes.skills_cont}
-                        onClick={() => {
-                          setNavData([{ id: 3, name: "linkedin" }]);
-                          setActiveComponent("linkedin");
-                        }}>
-                        <img src={react} alt="react" />
-                        <p>Linkedin.jsx</p>
-                      </div>
-                    </div>
-                  )}
-                </div>
-              )}
             </div>
           </LeftSideBarCont>
         </div>
