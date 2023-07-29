@@ -1,3 +1,36 @@
+const data = [
+  {
+    question: "fisrt question",
+    answear: "first answear",
+    active: false,
+  },
+  {
+    question: "fisrt question",
+    answear: "first answear",
+    active: false,
+  },
+  {
+    question: "fisrt question",
+    answear: "first answear",
+    active: false,
+  },
+  {
+    question: "fisrt question",
+    answear: "first answear",
+    active: false,
+  },
+  {
+    question: "fisrt question",
+    answear: "first answear",
+    active: false,
+  },
+  {
+    question: "fisrt question",
+    answear: "first answear",
+    active: false,
+  },
+];
+
 export const dummyData = [
   {
     id: 234,
@@ -7,6 +40,16 @@ export const dummyData = [
     title: "Shopping cart",
     github: "https://github.com/levaniakobidze/Shopping-cart",
     stack: ["react", "redux"],
+  },
+  {
+    id: 220,
+    image:
+      "https://res.cloudinary.com/diyky5uya/image/upload/v1690615234/web_q0padv.png",
+    live: "https://books-project-smoky.vercel.app/",
+    title: "ehub.edu.ge",
+    github: "#",
+
+    stack: ["react", "context api", "typescript", "tailwind"],
   },
   {
     id: 18,

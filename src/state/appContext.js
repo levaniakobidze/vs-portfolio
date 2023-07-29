@@ -6,6 +6,7 @@ export const AppContext = createContext();
 const ContextProvier = (props) => {
   const [activeNav, setActiveNav] = useState("_hello");
   const [showMenu, setShowMenu] = useState(false);
+
   const changeActiveNav = (e) => {
     setActiveNav(e.target.innerText);
     setShowMenu(false);
