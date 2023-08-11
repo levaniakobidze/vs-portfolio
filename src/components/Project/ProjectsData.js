@@ -46,10 +46,9 @@ export const dummyData = [
     image:
       "https://res.cloudinary.com/diyky5uya/image/upload/v1690615234/web_q0padv.png",
     live: "https://books-project-smoky.vercel.app/",
-    title: "ehub.edu.ge",
+    title: "englishhub.ge",
     github: "#",
-
-    stack: ["react", "context api", "typescript", "tailwind"],
+    stack: ["nextJs", "context api", "typescript", "tailwind"],
   },
   {
     id: 18,

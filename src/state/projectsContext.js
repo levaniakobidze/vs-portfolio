@@ -16,20 +16,20 @@ const filters = [
     text: "React",
   },
   {
+    id: "nextJs",
+    name: "nextJs",
+    htmlFor: "nextJs",
+    alt: "nextJs",
+    img: react,
+    text: "nextJs",
+  },
+  {
     id: "redux",
     name: "redux",
     htmlFor: "redux",
     alt: "redux",
     img: redux,
     text: "Redux",
-  },
-  {
-    id: "vue",
-    name: "vue",
-    htmlFor: "vue",
-    alt: "vue",
-    img: vue,
-    text: "Vue",
   },
   {
     id: "typescript",
@@ -107,7 +107,8 @@ const ContextProvider = (props) => {
         initialProjects,
         setProjects,
         colors,
-      }}>
+      }}
+    >
       {props.children}
     </ProjectsContext.Provider>
   );
