@@ -47,7 +47,8 @@ function About() {
                     ? `${classes.section} ${classes.active_section}`
                     : classes.section
                 }
-                onClick={() => makeSectionActive("info")}>
+                onClick={() => makeSectionActive("info")}
+              >
                 <img src={light_arrow} alt="arrow" />
                 <span>personal-info</span>
               </div>
@@ -55,7 +56,8 @@ function About() {
                 <div className={classes.sub_section_wrapper}>
                   <div
                     className={classes.sub_section}
-                    onClick={() => makeSectionActive("skills")}>
+                    onClick={() => makeSectionActive("skills")}
+                  >
                     <img
                       className={skills ? classes.active_sub_section : ""}
                       src={dark_arrow}
@@ -76,15 +78,17 @@ function About() {
                       onClick={() => {
                         setNavData([{ id: 4, name: "skills" }]);
                         setActiveComponent("skills");
-                      }}>
+                      }}
+                    >
                       <img src={react} alt="react" />
                       <p>Skills.jsx</p>
                     </div>
                   )}
                   {/* // */}
-                  <div
+                  {/* <div
                     className={classes.sub_section}
-                    onClick={() => makeSectionActive("education")}>
+                    onClick={() => makeSectionActive("education")}
+                  >
                     <img
                       className={education ? classes.active_sub_section : ""}
                       src={dark_arrow}
@@ -98,9 +102,9 @@ function About() {
                     <span className={education ? classes.active_span : ""}>
                       education
                     </span>
-                  </div>
+                  </div> */}
                   {/* // */}
-                  <div
+                  {/* <div
                     className={classes.sub_section}
                     onClick={() => makeSectionActive("photo")}>
                     <img
@@ -127,7 +131,7 @@ function About() {
                       <img src={react} alt="react" />
                       <p>Photo.jsx</p>
                     </div>
-                  )}
+                  )} */}
                 </div>
               )}
               {/* /////////////// */}
@@ -137,7 +141,8 @@ function About() {
                     ? `${classes.section} ${classes.active_section}`
                     : classes.section
                 }
-                onClick={() => makeSectionActive("contact")}>
+                onClick={() => makeSectionActive("contact")}
+              >
                 <img src={light_arrow} alt="arrow" />
                 <span>contact</span>
               </div>
@@ -146,7 +151,8 @@ function About() {
                 <div className={classes.sub_section_wrapper}>
                   <div
                     className={classes.sub_section}
-                    onClick={() => makeSectionActive("cv")}>
+                    onClick={() => makeSectionActive("cv")}
+                  >
                     <img
                       className={cv ? classes.active_sub_section : ""}
                       src={dark_arrow}
@@ -166,7 +172,8 @@ function About() {
                         onClick={() => {
                           setNavData([{ id: 32, name: "cv" }]);
                           setActiveComponent("cv");
-                        }}>
+                        }}
+                      >
                         <img src={react} alt="react" />
                         <p>Cv.jsx</p>
                       </div>
@@ -178,7 +185,8 @@ function About() {
                 <div className={classes.sub_section_wrapper}>
                   <div
                     className={classes.sub_section}
-                    onClick={() => makeSectionActive("github")}>
+                    onClick={() => makeSectionActive("github")}
+                  >
                     <img
                       className={github ? classes.active_sub_section : ""}
                       src={dark_arrow}
@@ -200,7 +208,8 @@ function About() {
                         onClick={() => {
                           setNavData([{ id: 24, name: "github" }]);
                           setActiveComponent("github");
-                        }}>
+                        }}
+                      >
                         <img src={react} alt="react" />
                         <p>Github.jsx</p>
                       </div>
@@ -216,7 +225,8 @@ function About() {
             <p
               className={classes.top_bar_contact}
               data-aos="fade-left"
-              data-aos-duration="2000">
+              data-aos-duration="2000"
+            >
               about <span onClick={() => (window.location = "/")}>x</span>
             </p>
             {navData &&
@@ -227,7 +237,8 @@ function About() {
                     onClick={() => removeFromNav(navItem.id)}
                     className={classes.top_bar_contact}
                     data-aos="fade-left"
-                    data-aos-duration="2000">
+                    data-aos-duration="2000"
+                  >
                     {navItem.name} <span>x</span>
                   </p>
                 );
