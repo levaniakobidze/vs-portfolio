@@ -13,7 +13,7 @@ function Hello() {
           <div className={classes.personal_info}>
             <p className={classes.greetings}>Hi all. I am</p>
             <h1 className={classes.name}>Levan Iakobidze</h1>
-            <p className={classes.profession}>{">"} Front-end developer</p>
+            <p className={classes.profession}>{">"} Full-Stack developer</p>
           </div>
           <div className={classes.below_text}>
             <p className={classes.comment}>{"// find my profile on Github:"}</p>
@@ -23,8 +23,10 @@ function Hello() {
               <span className={classes.equal}> = </span>
               <a
                 className={classes.value}
-                href="https://github.com/levaniakobidze">
-                {" "}
+                href="https://github.com/levaniakobidze"
+                target="_blank"
+                rel="noreferrer"
+              >
                 "https://github.com/levaniakobidze"
               </a>
             </span>
@@ -34,7 +36,7 @@ function Hello() {
           <img
             data-aos="fade-up"
             data-aos-duration="500"
-            className={classes.blur}
+            className={classes.blur1}
             src={code}
             alt="code"
           />
@@ -48,7 +50,7 @@ function Hello() {
           <img
             data-aos="fade-up"
             data-aos-duration="1000"
-            className={classes.blur}
+            className={classes.blur2}
             src={code}
             alt="code"
           />

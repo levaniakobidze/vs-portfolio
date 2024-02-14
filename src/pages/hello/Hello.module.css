@@ -37,7 +37,7 @@
   font-family: "Fira Code";
   font-style: normal;
   font-weight: 400;
-  font-size: 62px;
+  font-size: 55px;
   line-height: 81px;
   color: #e5e9f0;
 }
@@ -86,12 +86,20 @@
 .middle {
   position: relative;
   z-index: 1;
+  animation: movemiddle 4s infinite forwards ease-in-out;
 }
 
-.blur {
+.blur1 {
   opacity: 0.3 !important;
   position: relative;
-  z-index: 1;
+  z-index: 100;
+  animation: moveblur1 4s infinite forwards ease-in-out;
+}
+.blur2 {
+  opacity: 0.3 !important;
+  position: relative;
+  z-index: 1000;
+  animation: moveblur2 4s infinite forwards ease-in-out;
 }
 
 .green_light {
@@ -107,6 +115,43 @@
   bottom: -10%;
   width: 90%;
   animation: light 4s forwards infinite;
+}
+
+@keyframes moveblur1 {
+  0% {
+    top: 0px;
+  }
+  30% {
+    transform: scale(1.1);
+    top: 90px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes moveblur2 {
+  0% {
+    top: 0px;
+  }
+  30% {
+    transform: scale(1.1);
+    top: -90px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes movemiddle {
+  30% {
+    margin-right: 5px !important;
+    transform: scale(0.3);
+    /* transform: rotate(40deg); */
+  }
+  100% {
+    /* transform: rotate(0deg); */
+  }
 }
 
 @keyframes light {
