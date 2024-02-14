@@ -15,7 +15,7 @@ function AboutText() {
         <p className={classes.text}>
           <TypeIt
             options={{
-              speed: 10,
+              speed: 5,
             }}
           >
             Welcome to my corner of the digital world! I'm Levan Iakobidze, a
@@ -51,7 +51,7 @@ function AboutText() {
         <p className={classes.comment}>{"/**"}</p>
       </div>
       <div className={classes.code_snippet}>
-        <img src={github} alt="code" />
+        {/* <img src={github} alt="code" /> */}
       </div>
     </div>
   );

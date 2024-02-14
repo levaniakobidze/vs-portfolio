@@ -26,16 +26,18 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
-  color: #607b96;
+  color: #ffffff;
   margin-left: 10px;
 }
 
 .image_and_description {
   width: 100%;
-  height: 280px;
+  /* height: 280px; */
   border: 1px solid #1e2d3d;
   border-radius: 7px;
   background: #011221;
+  /* background-color: #fb2626; */
+
   margin-top: 15px;
   display: flex;
   flex-direction: column;
@@ -66,7 +68,6 @@
   font-size: 18px;
   line-height: 150%;
   /* or 27px */
-  color: #607b96;
   text-align: center;
 }
 .view_project_btn_cont {
@@ -90,7 +91,6 @@
   line-height: 18px;
   text-align: center;
   color: #9e9e9e;
-  background: #111c28;
   border-radius: 8px;
   cursor: pointer;
   align-items: center;
