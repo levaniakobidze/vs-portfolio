@@ -1,6 +1,6 @@
 .projects {
   width: 100%;
-  background-color: #011627;
+  background-color: hsl(207, 95%, 8%);
   min-height: 100vh;
   overflow-x: hidden;
 }

@@ -25,7 +25,8 @@ function Projects() {
             <p
               className={classes.top_bar_contact}
               data-aos="fade-left"
-              data-aos-duration="2000">
+              data-aos-duration="2000"
+            >
               Projects <img src={x} alt="x" />
             </p>
             {selectedStack.map((stack, index) => {
@@ -38,7 +39,8 @@ function Projects() {
                       colors[Math.floor(Math.random() * colors.length) + 1],
                   }}
                   data-aos="fade-left"
-                  data-aos-duration="2000">
+                  data-aos-duration="2000"
+                >
                   {/* {stack} */}o
                 </p>
               );

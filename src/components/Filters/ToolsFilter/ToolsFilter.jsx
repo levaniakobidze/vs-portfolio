@@ -30,7 +30,8 @@ function ToolsFilter() {
     <div className={classes.tools_filter}>
       <div
         className={classes.header}
-        onClick={() => setShowToolsFilter(!showToolsFilter)}>
+        onClick={() => setShowToolsFilter(!showToolsFilter)}
+      >
         <img
           className={!showToolsFilter ? classes.active : ""}
           src={light_arrow}
@@ -40,9 +41,9 @@ function ToolsFilter() {
       </div>
       {showToolsFilter && (
         <div className={classes.filters_list}>
-          {filters.map((filter) => {
+          {filters.map((filter, index) => {
             return (
-              <div className={classes.filter}>
+              <div key={index} className={classes.filter}>
                 <input
                   className={classes.filter_input}
                   type="checkbox"
@@ -52,10 +53,12 @@ function ToolsFilter() {
                 />
                 <label
                   className={classes.filter_label}
-                  htmlFor={filter.htmlFor}></label>
+                  htmlFor={filter.htmlFor}
+                ></label>
                 <label
                   className={classes.second_label}
-                  htmlFor={filter.htmlFor}>
+                  htmlFor={filter.htmlFor}
+                >
                   <img
                     className={classes.filter_image}
                     src={filter.img}
