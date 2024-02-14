@@ -4,6 +4,7 @@ import classes from "./Hello.module.css";
 import code from "../../assets/code_snippet.svg";
 import green_light from "../../assets/green_light.svg";
 import blue_light from "../../assets/blue_light.svg";
+import TypeIt from "typeit-react";
 
 function Hello() {
   return (
@@ -13,7 +14,16 @@ function Hello() {
           <div className={classes.personal_info}>
             <p className={classes.greetings}>Hi all. I am</p>
             <h1 className={classes.name}>Levan Iakobidze</h1>
-            <p className={classes.profession}>{">"} Full-Stack developer</p>
+            <TypeIt
+              options={{
+                speed: 100,
+                waitUntilVisible: true,
+                loop: true,
+              }}
+              className={classes.profession}
+            >
+              {">"} Full-Stack developer
+            </TypeIt>
           </div>
           <div className={classes.below_text}>
             <p className={classes.comment}>{"// find my profile on Github:"}</p>
@@ -27,7 +37,14 @@ function Hello() {
                 target="_blank"
                 rel="noreferrer"
               >
-                "https://github.com/levaniakobidze"
+                <TypeIt
+                  options={{
+                    speed: 300,
+                    waitUntilVisible: true,
+                  }}
+                >
+                  "https://github.com/levaniakobidze"
+                </TypeIt>
               </a>
             </span>
           </div>

@@ -40,6 +40,7 @@
   font-size: 55px;
   line-height: 81px;
   color: #e5e9f0;
+  display: block;
 }
 .profession {
   font-family: "Fira Code";
