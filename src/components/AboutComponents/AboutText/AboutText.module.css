@@ -1,6 +1,9 @@
 .about_text {
   padding: 20px;
 }
+.text {
+  font-size: 15px;
+}
 .text_cont {
   display: flex;
   flex-direction: column;
