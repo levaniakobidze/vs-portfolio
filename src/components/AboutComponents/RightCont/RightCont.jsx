@@ -11,7 +11,8 @@ function RightCont() {
       <div
         className={classes.user_cont}
         data-aos="fade-up"
-        data-aos-duration="500">
+        data-aos-duration="500"
+      >
         <div className={classes.user_header}>
           <div className={classes.user_info}>
             <div className={classes.user_image}>
@@ -32,7 +33,7 @@ function RightCont() {
             </span>
           </div>
         </div>
-        <div className={classes.code_snippet}>
+        <div className={classes.code_snippet1}>
           <img src={codeSnippet} alt="code_template" />
         </div>
       </div>
@@ -40,7 +41,8 @@ function RightCont() {
       <div
         className={classes.user_cont}
         data-aos="fade-up"
-        data-aos-duration="800">
+        data-aos-duration="800"
+      >
         <div className={classes.user_header}>
           <div className={classes.user_info}>
             <div className={classes.user_image}>
@@ -61,7 +63,7 @@ function RightCont() {
             </span>
           </div>
         </div>
-        <div className={classes.code_snippet}>
+        <div className={classes.code_snippet2}>
           <img src={codeSnippet} alt="code_template" />
         </div>
       </div>
