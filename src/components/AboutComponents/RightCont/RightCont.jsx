@@ -33,7 +33,7 @@ function RightCont() {
             </span>
           </div>
         </div>
-        <div className={classes.code_snippet1}>
+        <div className={classes.code_snippet}>
           <img src={codeSnippet} alt="code_template" />
         </div>
       </div>
@@ -63,7 +63,7 @@ function RightCont() {
             </span>
           </div>
         </div>
-        <div className={classes.code_snippet2}>
+        <div className={classes.code_snippet}>
           <img src={codeSnippet} alt="code_template" />
         </div>
       </div>

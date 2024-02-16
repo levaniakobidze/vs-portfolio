@@ -1,37 +1,13 @@
-const data = [
-  {
-    question: "fisrt question",
-    answear: "first answear",
-    active: false,
-  },
-  {
-    question: "fisrt question",
-    answear: "first answear",
-    active: false,
-  },
-  {
-    question: "fisrt question",
-    answear: "first answear",
-    active: false,
-  },
-  {
-    question: "fisrt question",
-    answear: "first answear",
-    active: false,
-  },
-  {
-    question: "fisrt question",
-    answear: "first answear",
-    active: false,
-  },
-  {
-    question: "fisrt question",
-    answear: "first answear",
-    active: false,
-  },
-];
-
 export const dummyData = [
+  {
+    id: 2657,
+    image:
+      "https://res.cloudinary.com/diyky5uya/image/upload/v1708089363/Screenshot_2024-02-16_171409_iz3lfz.png",
+    live: "https://carrentalgt.com/",
+    title: "CarrentalGt.com",
+    github: "#",
+    stack: ["nextJs", "context api", "typescript", "tailwind"],
+  },
   {
     id: 234,
     image:
@@ -42,14 +18,23 @@ export const dummyData = [
     stack: ["react", "redux"],
   },
   {
-    id: 220,
+    id: 234234,
     image:
-      "https://res.cloudinary.com/diyky5uya/image/upload/v1690615234/web_q0padv.png",
-    live: "https://englishhub.ge/",
-    title: "englishhub.ge",
-    github: "#",
-    stack: ["nextJs", "context api", "typescript", "tailwind"],
+      "https://res.cloudinary.com/diyky5uya/image/upload/v1708089948/Screenshot_2024-02-16_172526_p5ywce.png",
+    live: "https://tskapp.vercel.app/",
+    title: "Task management app",
+    github: "https://github.com/levaniakobidze/task_menagment_app",
+    stack: ["react", "redux"],
   },
+  // {
+  //   id: 220,
+  //   image:
+  //     "https://res.cloudinary.com/diyky5uya/image/upload/v1690615234/web_q0padv.png",
+  //   live: "https://englishhub.ge/",
+  //   title: "englishhub.ge",
+  //   github: "#",
+  //   stack: ["nextJs", "context api", "typescript", "tailwind"],
+  // },
   {
     id: 18,
     image:
@@ -96,88 +81,88 @@ export const dummyData = [
     github: "https://github.com/levaniakobidze/React-Todo-app",
     stack: ["react"],
   },
-  {
-    id: 9,
-    image:
-      "https://res.cloudinary.com/diyky5uya/image/upload/v1652800332/country_dcbmzo.png",
-    live: "https://country123.netlify.app//",
-    title: "Search country ( api )",
-    github: "https://github.com/levaniakobidze/Country-search-API",
-    stack: ["react"],
-  },
-  {
-    id: 77,
-    image:
-      "https://res.cloudinary.com/diyky5uya/image/upload/v1656272658/typehead_jwriod.png",
-    live: "https://github-typehead-api.vercel.app/",
-    title: "Github Typehead API",
-    github: "https://github.com/levaniakobidze/Github-Typehead-api",
-    stack: ["react"],
-  },
+  // {
+  //   id: 9,
+  //   image:
+  //     "https://res.cloudinary.com/diyky5uya/image/upload/v1652800332/country_dcbmzo.png",
+  //   live: "https://country123.netlify.app//",
+  //   title: "Search country ( api )",
+  //   github: "https://github.com/levaniakobidze/Country-search-API",
+  //   stack: ["react"],
+  // },
+  // {
+  //   id: 77,
+  //   image:
+  //     "https://res.cloudinary.com/diyky5uya/image/upload/v1656272658/typehead_jwriod.png",
+  //   live: "https://github-typehead-api.vercel.app/",
+  //   title: "Github Typehead API",
+  //   github: "https://github.com/levaniakobidze/Github-Typehead-api",
+  //   stack: ["react"],
+  // },
 
-  {
-    id: 22,
-    image:
-      "https://res.cloudinary.com/diyky5uya/image/upload/v1654271179/rest_hwoctn.png",
-    live: "https://resturant123iakobidze.netlify.app/#categories",
-    title: "Resturant page",
-    github: "https://github.com/levaniakobidze/resturant-landing-page",
-    stack: ["react"],
-  },
-  ////////////////////////
-  {
-    id: 7,
-    image:
-      "https://res.cloudinary.com/diyky5uya/image/upload/v1651425412/traff11_niyc3h.png",
-    live: "https://ltrafalgar.netlify.app/",
-    title: "Landing page",
-    github: "https://github.com/levaniakobidze/trafalgar-landing-page",
-    stack: ["react"],
-  },
-  {
-    id: 2,
-    image:
-      "https://res.cloudinary.com/diyky5uya/image/upload/v1649954893/users_q4ebfs.png",
-    live: "https://githubsearch12.netlify.app/",
-    title: "Users search",
-    github: "https://github.com/levaniakobidze/Github-Users",
-    stack: ["react"],
-  },
-  {
-    id: 517,
-    image:
-      "https://res.cloudinary.com/diyky5uya/image/upload/v1660495945/filters_buan9x.png",
-    live: "https://products-filter-js-theta.vercel.app/",
-    title: "Product Filter (JS)",
-    github: "https://github.com/levaniakobidze/Products-filter",
-    stack: ["js"],
-  },
+  // {
+  //   id: 22,
+  //   image:
+  //     "https://res.cloudinary.com/diyky5uya/image/upload/v1654271179/rest_hwoctn.png",
+  //   live: "https://resturant123iakobidze.netlify.app/#categories",
+  //   title: "Resturant page",
+  //   github: "https://github.com/levaniakobidze/resturant-landing-page",
+  //   stack: ["react"],
+  // },
+  // ////////////////////////
+  // {
+  //   id: 7,
+  //   image:
+  //     "https://res.cloudinary.com/diyky5uya/image/upload/v1651425412/traff11_niyc3h.png",
+  //   live: "https://ltrafalgar.netlify.app/",
+  //   title: "Landing page",
+  //   github: "https://github.com/levaniakobidze/trafalgar-landing-page",
+  //   stack: ["react"],
+  // },
+  // {
+  //   id: 2,
+  //   image:
+  //     "https://res.cloudinary.com/diyky5uya/image/upload/v1649954893/users_q4ebfs.png",
+  //   live: "https://githubsearch12.netlify.app/",
+  //   title: "Users search",
+  //   github: "https://github.com/levaniakobidze/Github-Users",
+  //   stack: ["react"],
+  // },
+  // {
+  //   id: 517,
+  //   image:
+  //     "https://res.cloudinary.com/diyky5uya/image/upload/v1660495945/filters_buan9x.png",
+  //   live: "https://products-filter-js-theta.vercel.app/",
+  //   title: "Product Filter (JS)",
+  //   github: "https://github.com/levaniakobidze/Products-filter",
+  //   stack: ["js"],
+  // },
 
-  {
-    id: 1,
-    image:
-      "https://res.cloudinary.com/diyky5uya/image/upload/v1649954772/landing_v1fmpo.png",
-    live: "https://travel-page1.netlify.app/",
-    title: "Travel page",
-    github: "https://github.com/levaniakobidze/Travel-page",
-    stack: ["react"],
-  },
-  {
-    id: 3,
-    image:
-      "https://res.cloudinary.com/diyky5uya/image/upload/v1650569021/landing-page_fcq4fi.png",
-    live: "https://landingpage1223.netlify.app/",
-    title: "Landing page",
-    github: "https://github.com/levaniakobidze/Landing-page",
-    stack: ["react"],
-  },
-  {
-    id: 88,
-    image:
-      "https://res.cloudinary.com/diyky5uya/image/upload/v1657298802/landing1_rkgteo.png",
-    live: "https://test-project12.vercel.app/",
-    title: "Landing page (API)",
-    github: "https://github.com/levaniakobidze/tech-test-landing-page-api",
-    stack: ["react", "typescript", "node"],
-  },
+  // {
+  //   id: 1,
+  //   image:
+  //     "https://res.cloudinary.com/diyky5uya/image/upload/v1649954772/landing_v1fmpo.png",
+  //   live: "https://travel-page1.netlify.app/",
+  //   title: "Travel page",
+  //   github: "https://github.com/levaniakobidze/Travel-page",
+  //   stack: ["react"],
+  // },
+  // {
+  //   id: 3,
+  //   image:
+  //     "https://res.cloudinary.com/diyky5uya/image/upload/v1650569021/landing-page_fcq4fi.png",
+  //   live: "https://landingpage1223.netlify.app/",
+  //   title: "Landing page",
+  //   github: "https://github.com/levaniakobidze/Landing-page",
+  //   stack: ["react"],
+  // },
+  // {
+  //   id: 88,
+  //   image:
+  //     "https://res.cloudinary.com/diyky5uya/image/upload/v1657298802/landing1_rkgteo.png",
+  //   live: "https://test-project12.vercel.app/",
+  //   title: "Landing page (API)",
+  //   github: "https://github.com/levaniakobidze/tech-test-landing-page-api",
+  //   stack: ["react", "typescript", "node"],
+  // },
 ];

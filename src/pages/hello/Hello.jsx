@@ -22,7 +22,7 @@ function Hello() {
               }}
               className={classes.profession}
             >
-              {">"} Full-Stack developer
+              {">"} Full-Stack Developer
             </TypeIt>
           </div>
           <div className={classes.below_text}>
