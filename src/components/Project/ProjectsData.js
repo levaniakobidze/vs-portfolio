@@ -81,6 +81,15 @@ export const dummyData = [
     github: "https://github.com/levaniakobidze/React-Todo-app",
     stack: ["react"],
   },
+  {
+    id: 2345,
+    image:
+      "https://res.cloudinary.com/diyky5uya/image/upload/v1708091657/Screenshot_2024-02-16_175404_eoi5oi.png",
+    live: "https://planets-levan.vercel.app/",
+    title: "THE PLANETS",
+    github: "https://github.com/levaniakobidze/planet-facts",
+    stack: ["react"],
+  },
   // {
   //   id: 9,
   //   image:
