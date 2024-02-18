@@ -17,6 +17,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  gap: 20px;
 }
 
 .download_btn_cont button {
@@ -28,7 +29,7 @@
   background-color: #c07a45;
   color: #fff;
   font-family: "Fira Code";
-  font-size: 15px;
+  font-size: 13px;
   cursor: pointer;
   transition: all 0.3s;
   letter-spacing: 1px;
@@ -44,8 +45,12 @@
   /* box-shadow: 0 0 5px 1px #c07a45 inset; */
   justify-content: center;
 }
-.download_btn_cont button:hover span {
-  font-size: 15px;
+.download_btn_cont button a {
+  text-decoration: none;
+  color: #fff;
+}
+.download_btn_cont button:hover a {
+  color: #c07a45;
 }
 .download_icon {
   transition: all 0.3s;
